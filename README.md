@@ -94,14 +94,7 @@ navigation. Their placeholder text and original social links remain preserved.
   unpublished drafts, account data, or server-side source. An account export
   would be needed to recover anything that was never publicly published.
 
-## Original archive and repeatable migration
-
-- `archive/original-pages/`: untouched published HTML for all 14 pages.
-- `archive/sitemap.xml`: original page inventory.
-- `archive/downloads/`: original downloaded asset bytes, named by SHA-256 of
-  the source URL (the URL is the cache key, not the file-content hash).
-- `archive/migration-manifest.json`: URL-to-local-file map, asset sizes, pages,
-  download failures, and external media inventory.
+## Repeatable migration
 
 The generated site is already ready to edit and host. To repeat the conversion
 from the captured archive, install the optional migration-only parser:
