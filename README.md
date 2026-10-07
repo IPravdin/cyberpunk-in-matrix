@@ -1,7 +1,8 @@
 # Cyberpunk in The Matrix
 
 Independent static copy of <https://cyberpunkinmatrix.weebly.com/>, captured on
-September 30, 2026. All 14 public pages and 191 referenced assets are preserved.
+September 30, 2026. The 12 retained public pages and their referenced assets are
+preserved.
 The site uses plain HTML, CSS, and JavaScript; no Weebly account, database,
 framework, package installation, or build step is required to run it.
 
@@ -53,7 +54,7 @@ change has been made by this migration.
 
 The original text, layouts, responsive styles, images, animated backgrounds,
 fonts, reading sequence, red/blue pill choices, and bibliography are retained.
-All public pages listed in the original sitemap are included:
+The retained public pages are included:
 
 | Page | File |
 | --- | --- |
@@ -69,12 +70,6 @@ All public pages listed in the original sitemap are included:
 | Jean Baudrillard | `jean-baudrillard.html` |
 | Philosophical and society issues | `influence.html` |
 | Bibliography | `references.html` |
-| Original template: My Story | `my-story.html` |
-| Original template: My Adventures | `my-adventures.html` |
-
-The last two pages were listed in the sitemap but not linked from the main
-navigation. Their placeholder text and original social links remain preserved.
-
 ## Migration changes and limits
 
 - Removed Weebly signup advertising, analytics, account bootstrapping, and
