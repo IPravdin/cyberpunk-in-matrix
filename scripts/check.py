@@ -1,15 +1,16 @@
 #!/usr/bin/env python3
-"""Offline integrity checks. Uses only Python's standard library."""
+"""Check the retained static site using only Python's standard library."""
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urlsplit, unquote
-import json
 import re
 
 ROOT = Path(__file__).resolve().parents[1]
 PUBLIC = ROOT / 'public'
 CSS_URL = re.compile(r'url\(\s*([\'"]?)(.*?)\1\s*\)', re.I)
 errors = []
+referenced = set()
+external_embeds = set()
 checked = 0
 
 
@@ -22,74 +23,70 @@ def check_reference(reference, owner, external_allowed=False):
         if not external_allowed:
             errors.append(f'{owner.relative_to(ROOT)}: remote dependency {reference}')
         return
-    local = PUBLIC / unquote(parsed.path.lstrip('/')) if reference.startswith('/') else owner.parent / unquote(parsed.path)
+    path = unquote(parsed.path)
+    local = (PUBLIC / path.lstrip('/') if path.startswith('/') else owner.parent / path).resolve()
     if local.is_dir():
         local /= 'index.html'
     checked += 1
+    referenced.add(local)
     if not local.is_file():
         errors.append(f'{owner.relative_to(ROOT)}: missing {reference}')
 
 
+def check_css(css, owner):
+    for match in CSS_URL.finditer(css):
+        check_reference(match[2], owner)
+
+
 class Page(HTMLParser):
-    def __init__(self, path, validate=True):
+    def __init__(self, path):
         super().__init__(convert_charrefs=True)
-        self.path, self.validate, self.depth, self.text = path, validate, 0, []
+        self.path, self.in_style = path, False
         self.feed(path.read_text())
 
     def handle_starttag(self, tag, attributes):
         attrs = dict(attributes)
-        if tag == 'div':
-            if self.depth:
-                self.depth += 1
-            elif attrs.get('id') == 'wsite-content':
-                self.depth = 1
-        if not self.validate:
-            return
-        if attrs.get('href') and tag == 'a':
-            check_reference(attrs['href'], self.path, external_allowed=True)
-            if attrs['href'].startswith('javascript:'):
+        if tag == 'style':
+            self.in_style = True
+        if attrs.get('href'):
+            check_reference(attrs['href'], self.path, external_allowed=tag == 'a')
+            if attrs['href'].strip().lower().startswith('javascript:'):
                 errors.append(f'{self.path.name}: inert JavaScript link')
-        elif attrs.get('href'):
-            check_reference(attrs['href'], self.path)
         if attrs.get('src'):
             check_reference(attrs['src'], self.path, external_allowed=tag == 'iframe')
-        for match in CSS_URL.finditer(attrs.get('style', '')):
-            check_reference(match[2], self.path)
+            if tag == 'iframe' and urlsplit(attrs['src']).netloc:
+                external_embeds.add((self.path.name, attrs['src']))
+        if attrs.get('poster'):
+            check_reference(attrs['poster'], self.path)
+        check_css(attrs.get('style', ''), self.path)
         if any(key.lower().startswith('on') for key in attrs):
             errors.append(f'{self.path.name}: inline handler retained')
 
     def handle_endtag(self, tag):
-        if tag == 'div' and self.depth:
-            self.depth -= 1
+        if tag == 'style':
+            self.in_style = False
 
     def handle_data(self, data):
-        if self.depth:
-            self.text.append(data)
-
-    def content(self):
-        return ' '.join(' '.join(self.text).split())
+        if self.in_style:
+            check_css(data, self.path)
 
 
-manifest = json.loads((ROOT / 'archive/migration-manifest.json').read_text())
-assert not manifest['download_failures'], 'Asset downloads failed'
-for original in sorted((ROOT / 'archive/original-pages').glob('*.html')):
-    local = PUBLIC / original.name
-    if not local.is_file():
-        errors.append(f'Missing page: {original.name}')
-        continue
-    page = Page(local)
-    if page.content() != Page(original, validate=False).content():
-        errors.append(f'{original.name}: original page text changed')
-for stylesheet in PUBLIC.rglob('*.css'):
-    for match in CSS_URL.finditer(stylesheet.read_text()):
-        check_reference(match[2], stylesheet)
-for url, info in manifest['assets'].items():
-    path = PUBLIC / info['path'].lstrip('/')
-    if not path.is_file() or path.stat().st_size != info['bytes']:
-        errors.append(f'Asset missing or changed: {url}')
+pages = sorted(PUBLIC.rglob('*.html'))
+if not (PUBLIC / 'index.html').is_file():
+    errors.append('Missing homepage: public/index.html')
+for page in pages:
+    Page(page)
+# Follow linked CSS so orphan stylesheets cannot keep unused assets alive.
+stylesheets = set()
+while pending := {p for p in referenced if p.suffix == '.css' and p.is_file()} - stylesheets:
+    stylesheet = sorted(pending)[0]
+    stylesheets.add(stylesheet)
+    check_css(stylesheet.read_text(), stylesheet)
+assets = {p.resolve() for p in PUBLIC.rglob('*') if p.is_file() and p.suffix != '.html'}
+for asset in sorted(assets - referenced):
+    errors.append(f'Unreferenced asset: {asset.relative_to(ROOT)}')
 if errors:
     print('\n'.join(errors))
     raise SystemExit(1)
-print(f'PASS: {len(manifest["pages"])} pages retain their original text; '
-      f'{len(manifest["assets"])} assets archived; {checked} local references resolve. '
-      f'Only {len(manifest["external_embeds"])} YouTube embeds require an external service.')
+print(f'PASS: {len(pages)} pages; {len(assets)} referenced assets; '
+      f'{checked} local references resolve; {len(external_embeds)} external embeds.')

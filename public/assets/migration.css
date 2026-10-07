@@ -2,14 +2,6 @@
 button.hamburger { border: 0; background: transparent; color: inherit; font: inherit; }
 a:focus-visible, button:focus-visible { outline: 2px solid #75ef89; outline-offset: 5px; }
 .mobile-nav[inert] { visibility: hidden; }
-.migration-gallery {
-  box-sizing: border-box; width: min(1000px, 95vw); max-height: 95vh;
-  padding: 20px; border: 1px solid #fff; background: #111; color: #fff;
-}
-.migration-gallery::backdrop { background: rgb(0 0 0 / 85%); }
-.migration-gallery img { display: block; max-width: 100%; max-height: 70vh; margin: 15px auto; object-fit: contain; }
-.migration-gallery-controls { display: flex; gap: 15px; justify-content: center; align-items: center; }
-.migration-gallery button { border: 1px solid #fff; padding: 10px 15px; background: #111; color: #fff; cursor: pointer; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition-duration: 0s !important; scroll-behavior: auto !important; }
 }

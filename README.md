@@ -32,7 +32,7 @@ asset references start at the website root.
   URLs, so links such as `/the-choice.html` keep working.
 - Original theme styles are in `public/files/main_style.css`. Small migration
   adjustments are in `public/assets/migration.css`.
-- Mobile navigation and the template photo galleries are implemented in
+- Mobile navigation is implemented in
   `public/assets/site.js`.
 - Images and animated GIFs are in `public/images`. Theme fonts are in
   `public/files/theme/fonts/`; other locally saved dependencies are under
@@ -76,10 +76,10 @@ The retained public pages are included:
   platform scripts. There are no public forms or store features on these pages.
 - Replaced the mobile menu with local JavaScript, including keyboard support.
 - The original theme's WOFF/WOFF2 files caused browser decoding errors. The
-  migrated stylesheet uses the original working TTF fonts instead. Original
-  downloaded files remain in the backup.
-- The three inert “View Gallery” template buttons now open the photos already
-  present in their respective sections, with next/previous and Escape controls.
+  stylesheet uses the working TTF fonts; unused font formats have been removed.
+- Consolidated identical Weebly base stylesheets. Removed unused fancyBox and
+  social-icon styles, unavailable font faces, and references to missing template
+  images while retaining the base layout rules.
 - Added a local favicon and visible keyboard focus outlines.
 - **22 YouTube embeds remain external.** Their URLs are preserved, but the
   actual videos are not downloaded. Playback needs internet access and depends
@@ -89,37 +89,23 @@ The retained public pages are included:
   unpublished drafts, account data, or server-side source. An account export
   would be needed to recover anything that was never publicly published.
 
-## Repeatable migration
+## Maintenance and verification
 
-The generated site is already ready to edit and host. To repeat the conversion
-from the captured archive, install the optional migration-only parser:
-
-```sh
-python3 -m venv .venv
-.venv/bin/pip install -r scripts/requirements-migration.txt
-.venv/bin/python scripts/migrate.py
-```
-
-**Regeneration overwrites the generated HTML and original asset copies in
-`public/`. Back up any edits first.** It uses the saved download cache and only
-accesses the network if a cached asset is missing. It does not recrawl the live
-site. The custom `site.js`, `migration.css`, and favicon are maintained separately.
-
-## Verification
+The retained site in `public/` is the source of truth. The original download
+archive is no longer included, so the migration generator and its optional
+Python dependencies have been removed. Edit the retained pages directly.
 
 ```sh
 npm run check
 ```
 
-This offline check uses Python's standard library. It checks that all 14 pages
-retain their original content text, local links and CSS assets resolve, the
-191 archived assets have the recorded sizes, and no remote scripts, images,
-stylesheets, or fonts remain. If you intentionally edit page text, update the
-comparison policy in `scripts/check.py` rather than altering the original archive.
+This offline check uses Python 3.8 or newer and only its standard library. It
+checks every retained page, local links, scripts, images, and CSS asset references
+(including inline styles). It rejects remote scripts, images, stylesheets, and
+fonts, inline event handlers, inert JavaScript links, and unreferenced public
+assets. External links and video embeds are allowed. Assets must be referenced
+from HTML or CSS; extend the checker if future JavaScript loads assets dynamically.
 
-Chromium verification covered all pages at 1200×853 and 390×853, with no missing
-images, horizontal overflow, or console warnings/errors. The main reading
-sequence, both pill branches, Home links, mobile menu, and gallery next/Escape
-controls were exercised. Representative layouts were compared with the live
-original. External media responses were isolated during the offline checks;
-video playback and other browsers were not comprehensively tested.
+The check validates the current site without requiring the deleted archive. It
+does not compare original text, test external video playback, or replace a browser
+check of appearance and navigation after visual changes.
