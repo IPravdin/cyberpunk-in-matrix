@@ -34,7 +34,7 @@ asset references start at the website root.
   adjustments are in `public/assets/migration.css`.
 - Mobile navigation and the template photo galleries are implemented in
   `public/assets/site.js`.
-- Images and animated GIFs are in `public/uploads/`. Theme fonts are in
+- Images and animated GIFs are in `public/images`. Theme fonts are in
   `public/files/theme/fonts/`; other locally saved dependencies are under
   `public/assets/vendor/`. Those vendor folder names record their origin; they
   are ordinary local files, with no connection to those hosts at runtime.
