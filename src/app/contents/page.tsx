@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Contents",
@@ -67,11 +68,11 @@ export default function Page() {
                     <div className="tw:[text-align:center]">
                       <div className="tw:[height:10px] tw:[overflow:hidden]"></div>
                       {"\n"}
-                      <a className="wsite-button" href={"/"}>
+                      <Link className="wsite-button" href={"/"}>
                         {"\n"}
-                        <span className="wsite-button-inner">{"HOme"}</span>
+                        <span className="wsite-button-inner">{"Home"}</span>
                         {"\n"}
-                      </a>
+                      </Link>
                       {"\n"}
                       <div className="tw:[height:10px] tw:[overflow:hidden]"></div>
                     </div>
@@ -79,13 +80,13 @@ export default function Page() {
                     <div className="tw:[text-align:center]">
                       <div className="tw:[height:10px] tw:[overflow:hidden]"></div>
                       {"\n"}
-                      <a className="wsite-button" href={"/the-matrix-film"}>
+                      <Link className="wsite-button" href={"/the-matrix-film"}>
                         {"\n"}
                         <span className="wsite-button-inner">
                           {"The Matrix (1999)"}
                         </span>
                         {"\n"}
-                      </a>
+                      </Link>
                       {"\n"}
                       <div className="tw:[height:10px] tw:[overflow:hidden]"></div>
                     </div>
@@ -93,7 +94,7 @@ export default function Page() {
                     <div className="tw:[text-align:center]">
                       <div className="tw:[height:10px] tw:[overflow:hidden]"></div>
                       {"\n"}
-                      <a
+                      <Link
                         className="wsite-button"
                         href={"/intro-to-cyberpunk-and-post-cyberpunk"}
                       >
@@ -102,7 +103,7 @@ export default function Page() {
                           {"What are Cyberpunk and post-cyberpunk?"}
                         </span>
                         {"\n"}
-                      </a>
+                      </Link>
                       {"\n"}
                       <div className="tw:[height:10px] tw:[overflow:hidden]"></div>
                     </div>
@@ -110,7 +111,7 @@ export default function Page() {
                     <div className="tw:[text-align:center]">
                       <div className="tw:[height:10px] tw:[overflow:hidden]"></div>
                       {"\n"}
-                      <a
+                      <Link
                         className="wsite-button"
                         href={"/cyberpunk-the-matrix-and-post-cyberpunk"}
                       >
@@ -119,7 +120,7 @@ export default function Page() {
                           {"Cyberpunk,​ The matrix and Post-Cyberpunk"}
                         </span>
                         {"\n"}
-                      </a>
+                      </Link>
                       {"\n"}
                       <div className="tw:[height:10px] tw:[overflow:hidden]"></div>
                     </div>
@@ -127,13 +128,13 @@ export default function Page() {
                     <div className="tw:[text-align:center]">
                       <div className="tw:[height:10px] tw:[overflow:hidden]"></div>
                       {"\n"}
-                      <a className="wsite-button" href={"/the-choice"}>
+                      <Link className="wsite-button" href={"/the-choice"}>
                         {"\n"}
                         <span className="wsite-button-inner">
                           {"Blue Pill or Red Pill?"}
                         </span>
                         {"\n"}
-                      </a>
+                      </Link>
                       {"\n"}
                       <div className="tw:[height:10px] tw:[overflow:hidden]"></div>
                     </div>
@@ -141,13 +142,13 @@ export default function Page() {
                     <div className="tw:[text-align:center]">
                       <div className="tw:[height:10px] tw:[overflow:hidden]"></div>
                       {"\n"}
-                      <a className="wsite-button" href={"/mise-en-scene"}>
+                      <Link className="wsite-button" href={"/mise-en-scene"}>
                         {"\n"}
                         <span className="wsite-button-inner">
                           {"Mise en scène"}
                         </span>
                         {"\n"}
-                      </a>
+                      </Link>
                       {"\n"}
                       <div className="tw:[height:10px] tw:[overflow:hidden]"></div>
                     </div>
@@ -155,13 +156,13 @@ export default function Page() {
                     <div className="tw:[text-align:center]">
                       <div className="tw:[height:10px] tw:[overflow:hidden]"></div>
                       {"\n"}
-                      <a className="wsite-button" href={"/tech"}>
+                      <Link className="wsite-button" href={"/tech"}>
                         {"\n"}
                         <span className="wsite-button-inner">
                           {"Technical perspective"}
                         </span>
                         {"\n"}
-                      </a>
+                      </Link>
                       {"\n"}
                       <div className="tw:[height:10px] tw:[overflow:hidden]"></div>
                     </div>
@@ -169,13 +170,13 @@ export default function Page() {
                     <div className="tw:[text-align:center]">
                       <div className="tw:[height:10px] tw:[overflow:hidden]"></div>
                       {"\n"}
-                      <a className="wsite-button" href={"/jean-baudrillard"}>
+                      <Link className="wsite-button" href={"/jean-baudrillard"}>
                         {"\n"}
                         <span className="wsite-button-inner">
                           {"Jean Baudrillard's opinion"}
                         </span>
                         {"\n"}
-                      </a>
+                      </Link>
                       {"\n"}
                       <div className="tw:[height:10px] tw:[overflow:hidden]"></div>
                     </div>
@@ -183,13 +184,13 @@ export default function Page() {
                     <div className="tw:[text-align:center]">
                       <div className="tw:[height:10px] tw:[overflow:hidden]"></div>
                       {"\n"}
-                      <a className="wsite-button" href={"/influence"}>
+                      <Link className="wsite-button" href={"/influence"}>
                         {"\n"}
                         <span className="wsite-button-inner">
                           {"Philosophical and Society Issues"}
                         </span>
                         {"\n"}
-                      </a>
+                      </Link>
                       {"\n"}
                       <div className="tw:[height:10px] tw:[overflow:hidden]"></div>
                     </div>
@@ -197,13 +198,13 @@ export default function Page() {
                     <div className="tw:[text-align:center]">
                       <div className="tw:[height:10px] tw:[overflow:hidden]"></div>
                       {"\n"}
-                      <a className="wsite-button" href={"/references"}>
+                      <Link className="wsite-button" href={"/references"}>
                         {"\n"}
                         <span className="wsite-button-inner">
                           {"Bibliography"}
                         </span>
                         {"\n"}
-                      </a>
+                      </Link>
                       {"\n"}
                       <div className="tw:[height:10px] tw:[overflow:hidden]"></div>
                     </div>

@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Jean Baudrillard",
@@ -197,13 +198,13 @@ export default function Page() {
                     <div className="tw:[text-align:center]">
                       <div className="tw:[height:10px] tw:[overflow:hidden]"></div>
                       {"\n"}
-                      <a className="wsite-button" href={"/influence"}>
+                      <Link className="wsite-button" href={"/influence"}>
                         {"\n"}
                         <span className="wsite-button-inner">
                           {"Philosophical and Society Issues"}
                         </span>
                         {"\n"}
-                      </a>
+                      </Link>
                       {"\n"}
                       <div className="tw:[height:10px] tw:[overflow:hidden]"></div>
                     </div>

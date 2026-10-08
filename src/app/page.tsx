@@ -1,5 +1,6 @@
 // Static content migrated from the frozen legacy checkpoint.
-import '../styles/globals.css';
+import "../styles/globals.css";
+import Link from "next/link";
 
 export default function Page() {
   return (
@@ -25,11 +26,15 @@ export default function Page() {
                     <div className="tw:[text-align:center]">
                       <div className="tw:[height:10px] tw:[overflow:hidden]"></div>
                       {"\n"}
-                      <a className="wsite-button" href={"/the-matrix-film"}>
+                      <Link className="wsite-button" href={"/the-matrix-film"}>
                         {"\n"}
-                        <span className="wsite-button-inner">{"​START (Recommended)"}<br />{"​"}</span>
+                        <span className="wsite-button-inner">
+                          {"​START (Recommended)"}
+                          <br />
+                          {"​"}
+                        </span>
                         {"\n"}
-                      </a>
+                      </Link>
                       {"\n"}
                       <div className="tw:[height:10px] tw:[overflow:hidden]"></div>
                     </div>
@@ -41,17 +46,26 @@ export default function Page() {
                           <table className="wsite-multicol-table">
                             <tbody>
                               <tr>
-                                <td className="wsite-multicol-col tw:[width:27.857142857143%] tw:[padding:0_15px]">{"\n"}<div className="tw:[height:50px]"></div>{"\n"}</td>
+                                <td className="wsite-multicol-col tw:[width:27.857142857143%] tw:[padding:0_15px]">
+                                  {"\n"}
+                                  <div className="tw:[height:50px]"></div>
+                                  {"\n"}
+                                </td>
                                 <td className="wsite-multicol-col tw:[width:22.142857142857%] tw:[padding:0_15px]">
                                   {"\n"}
                                   <div className="tw:[text-align:center]">
                                     <div className="tw:[height:10px] tw:[overflow:hidden]"></div>
                                     {"\n"}
-                                    <a className="wsite-button" href={"/contents"}>
+                                    <Link
+                                      className="wsite-button"
+                                      href={"/contents"}
+                                    >
                                       {"\n"}
-                                      <span className="wsite-button-inner">{"Table of Contents"}</span>
+                                      <span className="wsite-button-inner">
+                                        {"Table of Contents"}
+                                      </span>
                                       {"\n"}
-                                    </a>
+                                    </Link>
                                     {"\n"}
                                     <div className="tw:[height:10px] tw:[overflow:hidden]"></div>
                                   </div>
@@ -62,17 +76,26 @@ export default function Page() {
                                   <div className="tw:[text-align:center]">
                                     <div className="tw:[height:10px] tw:[overflow:hidden]"></div>
                                     {"\n"}
-                                    <a className="wsite-button" href={"/references"}>
+                                    <Link
+                                      className="wsite-button"
+                                      href={"/references"}
+                                    >
                                       {"\n"}
-                                      <span className="wsite-button-inner">{"Bibliography"}</span>
+                                      <span className="wsite-button-inner">
+                                        {"Bibliography"}
+                                      </span>
                                       {"\n"}
-                                    </a>
+                                    </Link>
                                     {"\n"}
                                     <div className="tw:[height:10px] tw:[overflow:hidden]"></div>
                                   </div>
                                   {"\n"}
                                 </td>
-                                <td className="wsite-multicol-col tw:[width:28.265306122449%] tw:[padding:0_15px]">{"\n"}<div className="tw:[height:50px]"></div>{"\n"}</td>
+                                <td className="wsite-multicol-col tw:[width:28.265306122449%] tw:[padding:0_15px]">
+                                  {"\n"}
+                                  <div className="tw:[height:50px]"></div>
+                                  {"\n"}
+                                </td>
                               </tr>
                             </tbody>
                           </table>

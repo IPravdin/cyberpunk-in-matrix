@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Mise-en-Scène",
@@ -28,15 +29,11 @@ export default function Page() {
                     <div>
                       <div className="wsite-image wsite-image-border-none tw:[padding-top:10px] tw:[padding-bottom:0px] tw:[margin-left:0px] tw:[margin-right:0px] tw:[text-align:center]">
                         {"\n"}
-                        <a>
-                          {"\n"}
-                          <img
-                            alt={"Picture"}
-                            src={"/images/mise-en-sc-ne.jpg"}
-                            className="tw:[width:auto] tw:[max-width:100%]"
-                          />
-                          {"\n"}
-                        </a>
+                        <img
+                          alt={"Picture"}
+                          src={"/images/mise-en-sc-ne.jpg"}
+                          className="tw:[width:auto] tw:[max-width:100%]"
+                        />
                         {"\n"}
                         <div className="tw:[display:block] tw:[font-size:90%]"></div>
                         {"\n"}
@@ -54,15 +51,11 @@ export default function Page() {
                     <div>
                       <div className="wsite-image wsite-image-border-none tw:[padding-top:10px] tw:[padding-bottom:10px] tw:[margin-left:0px] tw:[margin-right:0px] tw:[text-align:left]">
                         {"\n"}
-                        <a>
-                          {"\n"}
-                          <img
-                            alt={"Picture"}
-                            src={"/images/divider-graphic_4_orig.png"}
-                            className="tw:[width:auto] tw:[max-width:100%]"
-                          />
-                          {"\n"}
-                        </a>
+                        <img
+                          alt={"Picture"}
+                          src={"/images/divider-graphic_4_orig.png"}
+                          className="tw:[width:auto] tw:[max-width:100%]"
+                        />
                         {"\n"}
                         <div className="tw:[display:block] tw:[font-size:90%]"></div>
                         {"\n"}
@@ -146,15 +139,11 @@ export default function Page() {
                                   <div>
                                     <div className="wsite-image wsite-image-border-none tw:[padding-top:10px] tw:[padding-bottom:0px] tw:[margin-left:0px] tw:[margin-right:0px] tw:[text-align:center]">
                                       {"\n"}
-                                      <a>
-                                        {"\n"}
-                                        <img
-                                          alt={"Picture"}
-                                          src={"/images/collage_orig.jpg"}
-                                          className="tw:[width:auto] tw:[max-width:100%]"
-                                        />
-                                        {"\n"}
-                                      </a>
+                                      <img
+                                        alt={"Picture"}
+                                        src={"/images/collage_orig.jpg"}
+                                        className="tw:[width:auto] tw:[max-width:100%]"
+                                      />
                                       {"\n"}
                                       <div className="tw:[display:block] tw:[font-size:90%]"></div>
                                       {"\n"}
@@ -173,17 +162,13 @@ export default function Page() {
                                   <div>
                                     <div className="wsite-image wsite-image-border-none tw:[padding-top:10px] tw:[padding-bottom:10px] tw:[margin-left:0px] tw:[margin-right:0px] tw:[text-align:left]">
                                       {"\n"}
-                                      <a>
-                                        {"\n"}
-                                        <img
-                                          alt={"Picture"}
-                                          src={
-                                            "/images/divider-graphic_5_orig.png"
-                                          }
-                                          className="tw:[width:auto] tw:[max-width:100%]"
-                                        />
-                                        {"\n"}
-                                      </a>
+                                      <img
+                                        alt={"Picture"}
+                                        src={
+                                          "/images/divider-graphic_5_orig.png"
+                                        }
+                                        className="tw:[width:auto] tw:[max-width:100%]"
+                                      />
                                       {"\n"}
                                       <div className="tw:[display:block] tw:[font-size:90%]"></div>
                                       {"\n"}
@@ -266,17 +251,13 @@ export default function Page() {
                                   <div>
                                     <div className="wsite-image wsite-image-border-none tw:[padding-top:10px] tw:[padding-bottom:10px] tw:[margin-left:0px] tw:[margin-right:0px] tw:[text-align:left]">
                                       {"\n"}
-                                      <a>
-                                        {"\n"}
-                                        <img
-                                          alt={"Picture"}
-                                          src={
-                                            "/images/divider-graphic_6_orig.png"
-                                          }
-                                          className="tw:[width:auto] tw:[max-width:100%]"
-                                        />
-                                        {"\n"}
-                                      </a>
+                                      <img
+                                        alt={"Picture"}
+                                        src={
+                                          "/images/divider-graphic_6_orig.png"
+                                        }
+                                        className="tw:[width:auto] tw:[max-width:100%]"
+                                      />
                                       {"\n"}
                                       <div className="tw:[display:block] tw:[font-size:90%]"></div>
                                       {"\n"}
@@ -304,15 +285,11 @@ export default function Page() {
                                   <div>
                                     <div className="wsite-image wsite-image-border-none tw:[padding-top:80px] tw:[padding-bottom:0px] tw:[margin-left:0px] tw:[margin-right:0px] tw:[text-align:center]">
                                       {"\n"}
-                                      <a>
-                                        {"\n"}
-                                        <img
-                                          alt={"Picture"}
-                                          src={"/images/neo-wakesup_orig.jpg"}
-                                          className="tw:[width:auto] tw:[max-width:100%]"
-                                        />
-                                        {"\n"}
-                                      </a>
+                                      <img
+                                        alt={"Picture"}
+                                        src={"/images/neo-wakesup_orig.jpg"}
+                                        className="tw:[width:auto] tw:[max-width:100%]"
+                                      />
                                       {"\n"}
                                       <div className="tw:[display:block] tw:[font-size:90%]"></div>
                                       {"\n"}
@@ -333,13 +310,13 @@ export default function Page() {
                     <div className="tw:[text-align:center]">
                       <div className="tw:[height:10px] tw:[overflow:hidden]"></div>
                       {"\n"}
-                      <a className="wsite-button" href={"/tech"}>
+                      <Link className="wsite-button" href={"/tech"}>
                         {"\n"}
                         <span className="wsite-button-inner">
                           {"Technical perspective"}
                         </span>
                         {"\n"}
-                      </a>
+                      </Link>
                       {"\n"}
                       <div className="tw:[height:10px] tw:[overflow:hidden]"></div>
                     </div>

@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Tech",
@@ -188,15 +189,11 @@ export default function Page() {
                                   <div>
                                     <div className="wsite-image wsite-image-border-none tw:[padding-top:0px] tw:[padding-bottom:0px] tw:[margin-left:0px] tw:[margin-right:0px] tw:[text-align:right]">
                                       {"\n"}
-                                      <a>
-                                        {"\n"}
-                                        <img
-                                          alt={"Picture"}
-                                          src={"/images/957634499_orig.jpg"}
-                                          className="tw:[width:auto] tw:[max-width:100%]"
-                                        />
-                                        {"\n"}
-                                      </a>
+                                      <img
+                                        alt={"Picture"}
+                                        src={"/images/957634499_orig.jpg"}
+                                        className="tw:[width:auto] tw:[max-width:100%]"
+                                      />
                                       {"\n"}
                                       <div className="tw:[display:block] tw:[font-size:90%]"></div>
                                       {"\n"}
@@ -208,15 +205,11 @@ export default function Page() {
                                   <div>
                                     <div className="wsite-image wsite-image-border-none tw:[padding-top:0px] tw:[padding-bottom:0px] tw:[margin-left:0px] tw:[margin-right:0px] tw:[text-align:right]">
                                       {"\n"}
-                                      <a>
-                                        {"\n"}
-                                        <img
-                                          alt={"Picture"}
-                                          src={"/images/472398375_orig.jpg"}
-                                          className="tw:[width:auto] tw:[max-width:100%]"
-                                        />
-                                        {"\n"}
-                                      </a>
+                                      <img
+                                        alt={"Picture"}
+                                        src={"/images/472398375_orig.jpg"}
+                                        className="tw:[width:auto] tw:[max-width:100%]"
+                                      />
                                       {"\n"}
                                       <div className="tw:[display:block] tw:[font-size:90%]"></div>
                                       {"\n"}
@@ -228,15 +221,11 @@ export default function Page() {
                                   <div>
                                     <div className="wsite-image wsite-image-border-none tw:[padding-top:10px] tw:[padding-bottom:0px] tw:[margin-left:0px] tw:[margin-right:0px] tw:[text-align:left]">
                                       {"\n"}
-                                      <a>
-                                        {"\n"}
-                                        <img
-                                          alt={"Picture"}
-                                          src={"/images/809775166_orig.jpg"}
-                                          className="tw:[width:auto] tw:[max-width:100%]"
-                                        />
-                                        {"\n"}
-                                      </a>
+                                      <img
+                                        alt={"Picture"}
+                                        src={"/images/809775166_orig.jpg"}
+                                        className="tw:[width:auto] tw:[max-width:100%]"
+                                      />
                                       {"\n"}
                                       <div className="tw:[display:block] tw:[font-size:90%]"></div>
                                       {"\n"}
@@ -259,13 +248,13 @@ export default function Page() {
                     <div className="tw:[text-align:center]">
                       <div className="tw:[height:10px] tw:[overflow:hidden]"></div>
                       {"\n"}
-                      <a className="wsite-button" href={"/jean-baudrillard"}>
+                      <Link className="wsite-button" href={"/jean-baudrillard"}>
                         {"\n"}
                         <span className="wsite-button-inner">
                           {"Jean Baudrillard's opinion"}
                         </span>
                         {"\n"}
-                      </a>
+                      </Link>
                       {"\n"}
                       <div className="tw:[height:10px] tw:[overflow:hidden]"></div>
                     </div>

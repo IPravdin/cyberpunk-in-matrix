@@ -57,15 +57,11 @@ export default function Page() {
                     <div>
                       <div className="wsite-image wsite-image-border-none tw:[padding-top:10px] tw:[padding-bottom:10px] tw:[margin-left:0px] tw:[margin-right:0px] tw:[text-align:left]">
                         {"\n"}
-                        <a>
-                          {"\n"}
-                          <img
-                            alt={"Picture"}
-                            src={"/images/divider-graphic_5.png"}
-                            className="tw:[width:auto] tw:[max-width:100%]"
-                          />
-                          {"\n"}
-                        </a>
+                        <img
+                          alt={"Picture"}
+                          src={"/images/divider-graphic_5.png"}
+                          className="tw:[width:auto] tw:[max-width:100%]"
+                        />
                         {"\n"}
                         <div className="tw:[display:block] tw:[font-size:90%]"></div>
                         {"\n"}
