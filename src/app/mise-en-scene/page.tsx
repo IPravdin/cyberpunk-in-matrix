@@ -8,60 +8,47 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      {"\n"}
-      {"\n"}
       <div className="main-wrap">
-        {"\n"}
         <div className="wsite-not-footer" id={"wsite-content"}>
-          {"\n"}
           <div className="wsite-section-wrap">
-            {"\n"}
             <div className="wsite-section wsite-body-section">
-              {"\n"}
               <div className="wsite-section-content">
-                {"\n"}
                 <div className="container">
-                  {"\n"}
                   <div>
-                    {"\n"}
                     <div className="tw:[height:50px]"></div>
-                    {"\n"}
+
                     <div>
                       <div className="wsite-image wsite-image-border-none tw:[padding-top:10px] tw:[padding-bottom:0px] tw:[margin-left:0px] tw:[margin-right:0px] tw:[text-align:center]">
-                        {"\n"}
                         <img
                           alt={"Picture"}
                           src={"/images/mise-en-sc-ne.jpg"}
                           className="tw:[width:auto] tw:[max-width:100%]"
                         />
-                        {"\n"}
+
                         <div className="tw:[display:block] tw:[font-size:90%]"></div>
-                        {"\n"}
                       </div>
                     </div>
-                    {"\n"}
+
                     <h2 className="wsite-content-title tw:[text-align:left]">
                       <font size={"6"}>{"Mise-en-scène"}</font>
                     </h2>
-                    {"\n"}
+
                     <div className="paragraph">
                       {"It refers to all film elements as arranged in a frame."}
                     </div>
-                    {"\n"}
+
                     <div>
                       <div className="wsite-image wsite-image-border-none tw:[padding-top:10px] tw:[padding-bottom:10px] tw:[margin-left:0px] tw:[margin-right:0px] tw:[text-align:left]">
-                        {"\n"}
                         <img
                           alt={"Picture"}
                           src={"/images/divider-graphic_4_orig.png"}
                           className="tw:[width:auto] tw:[max-width:100%]"
                         />
-                        {"\n"}
+
                         <div className="tw:[display:block] tw:[font-size:90%]"></div>
-                        {"\n"}
                       </div>
                     </div>
-                    {"\n"}
+
                     <div className="paragraph tw:[text-align:left]">
                       {"In the scene above we can see"}
                       <ol>
@@ -102,66 +89,49 @@ export default function Page() {
                         "The above shot is straight on angle and it is a full shot."
                       }
                     </div>
-                    {"\n"}
+
                     <div className="tw:[height:50px]"></div>
-                    {"\n"}
                   </div>
-                  {"\n"}
                 </div>
-                {"\n"}
               </div>
-              {"\n"}
             </div>
-            {"\n"}
           </div>
-          {"\n"}
+
           <div className="wsite-section-wrap">
-            {"\n"}
             <div className="wsite-section wsite-body-section wsite-section-bg-color tw:[background-color:#000000] tw:[background-image:none]">
-              {"\n"}
               <div className="wsite-section-content">
-                {"\n"}
                 <div className="container">
-                  {"\n"}
                   <div>
-                    {"\n"}
                     <div className="tw:[height:50px]"></div>
-                    {"\n"}
+
                     <div>
                       <div className="wsite-multicol">
                         <div className="tw:[margin:0_-45px]">
-                          {"\n"}
                           <table className="wsite-multicol-table">
                             <tbody>
                               <tr>
                                 <td className="wsite-multicol-col tw:[width:60.413223140496%] tw:[padding:0_45px]">
-                                  {"\n"}
                                   <div>
                                     <div className="wsite-image wsite-image-border-none tw:[padding-top:10px] tw:[padding-bottom:0px] tw:[margin-left:0px] tw:[margin-right:0px] tw:[text-align:center]">
-                                      {"\n"}
                                       <img
                                         alt={"Picture"}
                                         src={"/images/collage_orig.jpg"}
                                         className="tw:[width:auto] tw:[max-width:100%]"
                                       />
-                                      {"\n"}
+
                                       <div className="tw:[display:block] tw:[font-size:90%]"></div>
-                                      {"\n"}
                                     </div>
                                   </div>
-                                  {"\n"}
                                 </td>
                                 <td className="wsite-multicol-col tw:[width:39.586776859504%] tw:[padding:0_45px]">
-                                  {"\n"}
                                   <div className="tw:[height:24px]"></div>
-                                  {"\n"}
+
                                   <h2 className="wsite-content-title tw:[text-align:left]">
                                     <font size={"6"}>{"Different tints"}</font>
                                   </h2>
-                                  {"\n"}
+
                                   <div>
                                     <div className="wsite-image wsite-image-border-none tw:[padding-top:10px] tw:[padding-bottom:10px] tw:[margin-left:0px] tw:[margin-right:0px] tw:[text-align:left]">
-                                      {"\n"}
                                       <img
                                         alt={"Picture"}
                                         src={
@@ -169,12 +139,11 @@ export default function Page() {
                                         }
                                         className="tw:[width:auto] tw:[max-width:100%]"
                                       />
-                                      {"\n"}
+
                                       <div className="tw:[display:block] tw:[font-size:90%]"></div>
-                                      {"\n"}
                                     </div>
                                   </div>
-                                  {"\n"}
+
                                   <div className="paragraph tw:[text-align:left]">
                                     <font size={"5"}>
                                       {
@@ -201,56 +170,41 @@ export default function Page() {
                                       </li>
                                     </ul>
                                   </div>
-                                  {"\n"}
                                 </td>
                               </tr>
                             </tbody>
                           </table>
-                          {"\n"}
                         </div>
                       </div>
                     </div>
-                    {"\n"}
                   </div>
-                  {"\n"}
                 </div>
-                {"\n"}
               </div>
-              {"\n"}
             </div>
-            {"\n"}
           </div>
-          {"\n"}
+
           <div className="wsite-section-wrap">
-            {"\n"}
             <div className="wsite-section wsite-body-section">
-              {"\n"}
               <div className="wsite-section-content">
-                {"\n"}
                 <div className="container">
-                  {"\n"}
                   <div>
-                    {"\n"}
                     <div>
                       <div className="wsite-multicol">
                         <div className="tw:[margin:0_-45px]">
-                          {"\n"}
                           <table className="wsite-multicol-table">
                             <tbody>
                               <tr>
                                 <td className="wsite-multicol-col tw:[width:38.181818181818%] tw:[padding:0_45px]">
-                                  {"\n"}
                                   <div className="tw:[height:24px]"></div>
-                                  {"\n"}
+
                                   <h2 className="wsite-content-title tw:[text-align:left]">
                                     <font size={"6"}>
                                       {"Screen Transitioning"}
                                     </font>
                                   </h2>
-                                  {"\n"}
+
                                   <div>
                                     <div className="wsite-image wsite-image-border-none tw:[padding-top:10px] tw:[padding-bottom:10px] tw:[margin-left:0px] tw:[margin-right:0px] tw:[text-align:left]">
-                                      {"\n"}
                                       <img
                                         alt={"Picture"}
                                         src={
@@ -258,12 +212,11 @@ export default function Page() {
                                         }
                                         className="tw:[width:auto] tw:[max-width:100%]"
                                       />
-                                      {"\n"}
+
                                       <div className="tw:[display:block] tw:[font-size:90%]"></div>
-                                      {"\n"}
                                     </div>
                                   </div>
-                                  {"\n"}
+
                                   <div className="paragraph tw:[text-align:left]">
                                     <em>
                                       <strong>
@@ -278,64 +231,47 @@ export default function Page() {
                                       "Fact: This happens three times and doesn’t happen after he wakes up from the matrix. "
                                     }
                                   </div>
-                                  {"\n"}
                                 </td>
                                 <td className="wsite-multicol-col tw:[width:61.818181818182%] tw:[padding:0_45px]">
-                                  {"\n"}
                                   <div>
                                     <div className="wsite-image wsite-image-border-none tw:[padding-top:80px] tw:[padding-bottom:0px] tw:[margin-left:0px] tw:[margin-right:0px] tw:[text-align:center]">
-                                      {"\n"}
                                       <img
                                         alt={"Picture"}
                                         src={"/images/neo-wakesup_orig.jpg"}
                                         className="tw:[width:auto] tw:[max-width:100%]"
                                       />
-                                      {"\n"}
+
                                       <div className="tw:[display:block] tw:[font-size:90%]"></div>
-                                      {"\n"}
                                     </div>
                                   </div>
-                                  {"\n"}
                                 </td>
                               </tr>
                             </tbody>
                           </table>
-                          {"\n"}
                         </div>
                       </div>
                     </div>
-                    {"\n"}
+
                     <div className="tw:[height:50px]"></div>
-                    {"\n"}
+
                     <div className="tw:[text-align:center]">
                       <div className="tw:[height:10px] tw:[overflow:hidden]"></div>
-                      {"\n"}
+
                       <Link className="wsite-button" href={"/tech"}>
-                        {"\n"}
                         <span className="wsite-button-inner">
                           {"Technical perspective"}
                         </span>
-                        {"\n"}
                       </Link>
-                      {"\n"}
+
                       <div className="tw:[height:10px] tw:[overflow:hidden]"></div>
                     </div>
-                    {"\n"}
                   </div>
-                  {"\n"}
                 </div>
-                {"\n"}
               </div>
-              {"\n"}
             </div>
-            {"\n"}
           </div>
-          {"\n"}
         </div>
-        {"\n"}
       </div>
-      {"\n"}
-      {"\n"}
     </>
   );
 }
