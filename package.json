@@ -2,23 +2,19 @@
   "name": "cyberpunk-in-matrix",
   "version": "1.0.0",
   "private": true,
-  "description": "Cyberpunk in The Matrix — incremental Next.js and Tailwind migration",
+  "description": "Cyberpunk in The Matrix \u2014 Next.js and Tailwind",
   "packageManager": "pnpm@10.30.2",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "check:export": "node scripts/check-export.mjs",
-    "test:export": "MIGRATION_TARGET=export playwright test",
-    "test:next": "MIGRATION_TARGET=next playwright test",
-    "check": "pnpm lint && pnpm typecheck && pnpm check:legacy && pnpm test",
+    "test:export": "TEST_TARGET=export playwright test",
+    "check": "pnpm lint && pnpm typecheck && pnpm test",
     "lint": "eslint",
     "typecheck": "next typegen && tsc --noEmit",
     "test": "playwright test",
-    "test:legacy": "MIGRATION_TARGET=legacy playwright test",
-    "legacy:build": "node scripts/build-legacy.mjs",
-    "legacy:dev": "node scripts/build-legacy.mjs && SITE_DIR=.legacy node scripts/serve.mjs",
-    "check:legacy": "node scripts/build-legacy.mjs && python3 scripts/check.py .legacy"
+    "preview": "SITE_DIR=out node scripts/serve.mjs"
   },
   "engines": {
     "node": ">=22"

@@ -127,7 +127,14 @@ export function SiteShell({ children }: { children: ReactNode }) {
         </button>
         <ul>
           <li className="wsite-menu-item-wrap">
-            <Link className="wsite-menu-item" href="/">
+            <Link
+              className="wsite-menu-item"
+              href="/"
+              onClick={() => {
+                openerRef.current?.focus();
+                setOpen(false);
+              }}
+            >
               Home
             </Link>
           </li>

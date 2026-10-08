@@ -1,8 +1,8 @@
-import type { NextConfig } from 'next';
-import { PHASE_DEVELOPMENT_SERVER } from 'next/constants';
+import type { NextConfig } from "next";
+import { PHASE_DEVELOPMENT_SERVER } from "next/constants";
 
 const config: NextConfig = {
-  output: 'export',
+  output: "export",
   trailingSlash: false,
   reactStrictMode: true,
   poweredByHeader: false,
@@ -17,12 +17,12 @@ export default function nextConfig(phase: string): NextConfig {
     return {
       ...config,
       // Browser checks can run beside an already-open development server.
-      distDir: process.env.MIGRATION_TEST === '1' ? '.next-test' : '.next',
+      distDir: process.env.TEST_SERVER === "1" ? ".next-test" : ".next",
       output: undefined,
       rewrites() {
         return [
-          { source: '/index.html', destination: '/' },
-          { source: '/:page.html', destination: '/:page' },
+          { source: "/index.html", destination: "/" },
+          { source: "/:page.html", destination: "/:page" },
         ];
       },
     };

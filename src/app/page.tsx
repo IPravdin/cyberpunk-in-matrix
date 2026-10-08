@@ -1,5 +1,3 @@
-// Static content migrated from the frozen legacy checkpoint.
-import "../styles/globals.css";
 import Link from "next/link";
 
 export default function Page() {

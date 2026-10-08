@@ -1,0 +1,633 @@
+[
+  {
+    "path": "/",
+    "title": "Cyberpunk in Matrix",
+    "contentHash": "fafaab9dd89d6452925271109e984c386d2209db6ab3e9058835ec59d0d1cbf2",
+    "headings": [],
+    "links": [
+      {
+        "href": "/",
+        "text": "Home",
+        "target": null
+      },
+      {
+        "href": "/the-matrix-film",
+        "text": "​START (Recommended)​",
+        "target": null
+      },
+      {
+        "href": "/contents",
+        "text": "Table of Contents",
+        "target": null
+      },
+      {
+        "href": "/references",
+        "text": "Bibliography",
+        "target": null
+      },
+      {
+        "href": "/",
+        "text": "Home",
+        "target": null
+      }
+    ],
+    "images": [],
+    "embeds": []
+  },
+  {
+    "path": "/blue-pill",
+    "title": "Blue Pill",
+    "contentHash": "3a78695388b38b5cceefaf6796b0137877514593543b91af2752d5a17e3d736c",
+    "headings": [],
+    "links": [
+      {
+        "href": "/",
+        "text": "Home",
+        "target": null
+      },
+      {
+        "href": "/",
+        "text": "Home",
+        "target": null
+      },
+      {
+        "href": "/",
+        "text": "Home",
+        "target": null
+      }
+    ],
+    "images": [],
+    "embeds": []
+  },
+  {
+    "path": "/contents",
+    "title": "Contents",
+    "contentHash": "3f7ffdc535d67090f74ef5145381dc893e2b701ffa6912928aeec2c33274ce70",
+    "headings": ["Table of Contents"],
+    "links": [
+      {
+        "href": "/",
+        "text": "Home",
+        "target": null
+      },
+      {
+        "href": "/",
+        "text": "Home",
+        "target": null
+      },
+      {
+        "href": "/the-matrix-film",
+        "text": "The Matrix (1999)",
+        "target": null
+      },
+      {
+        "href": "/intro-to-cyberpunk-and-post-cyberpunk",
+        "text": "What are Cyberpunk and post-cyberpunk?",
+        "target": null
+      },
+      {
+        "href": "/cyberpunk-the-matrix-and-post-cyberpunk",
+        "text": "Cyberpunk,​ The matrix and Post-Cyberpunk",
+        "target": null
+      },
+      {
+        "href": "/the-choice",
+        "text": "Blue Pill or Red Pill?",
+        "target": null
+      },
+      {
+        "href": "/mise-en-scene",
+        "text": "Mise en scène",
+        "target": null
+      },
+      {
+        "href": "/tech",
+        "text": "Technical perspective",
+        "target": null
+      },
+      {
+        "href": "/jean-baudrillard",
+        "text": "Jean Baudrillard's opinion",
+        "target": null
+      },
+      {
+        "href": "/influence",
+        "text": "Philosophical and Society Issues",
+        "target": null
+      },
+      {
+        "href": "/references",
+        "text": "Bibliography",
+        "target": null
+      },
+      {
+        "href": "/",
+        "text": "Home",
+        "target": null
+      }
+    ],
+    "images": [],
+    "embeds": []
+  },
+  {
+    "path": "/cyberpunk-the-matrix-and-post-cyberpunk",
+    "title": "Cyberpunk, The Matrix, and Post-Cyberpunk",
+    "contentHash": "bb4bb987ce769fa479f2b98b5dea0d11dc392e1cd88366e5e68f0b760eb04d6b",
+    "headings": [
+      "Main Characteristics of",
+      "Cyberpunk",
+      "Post-Cyberpunk",
+      "And The Matrix (1999)",
+      "1",
+      "Lenses",
+      "2",
+      "Style",
+      "3",
+      "Hacker",
+      "4",
+      "World Control",
+      "5",
+      "“World city\"",
+      "6",
+      "Cyborg",
+      "7",
+      "Hacking",
+      "Cyberpunk",
+      "Post-Cyberpunk",
+      "The Matrix (1999)",
+      "Hacking Human Operational System",
+      "​1) Feelings are just “electrical signals interpreted by your brain” (The Matrix 1999).",
+      "2) “The body cannot live without the mind” (The Matrix 1999).",
+      "Mouse dead",
+      "3) Knowledge and skills are also just electrical signals.",
+      "Hacking Computer (the Matrix world)​",
+      "​1) If you need guns, just ask your Matrix operator.​",
+      "2) Physics in the Matrix are just hackable rules. And Neo hacked the whole Matrix, even virtual death.",
+      "AI hacked society via the Matrix",
+      "8",
+      "Virtual Reality",
+      "Cyberpunk",
+      "Post-Cyberpunk",
+      "The Matrix (1999)"
+    ],
+    "links": [
+      {
+        "href": "/",
+        "text": "Home",
+        "target": null
+      },
+      {
+        "href": "/the-choice",
+        "text": "Blue Pill or Red Pill?",
+        "target": null
+      },
+      {
+        "href": "/",
+        "text": "Home",
+        "target": null
+      }
+    ],
+    "images": [
+      {
+        "src": "/images/divider-graphic_7.png",
+        "alt": "Picture"
+      },
+      {
+        "src": "/images/artificial-intelligence.jpg",
+        "alt": "Picture"
+      },
+      {
+        "src": "/images/divider-graphic_8.png",
+        "alt": "Picture"
+      },
+      {
+        "src": "/images/divider-graphic_9.png",
+        "alt": "Picture"
+      },
+      {
+        "src": "/images/divider-graphic_10.png",
+        "alt": "Picture"
+      },
+      {
+        "src": "/images/divider-graphic_11.png",
+        "alt": "Picture"
+      },
+      {
+        "src": "/images/12-3-2020-8-03-19-pm_1.png",
+        "alt": "Picture"
+      },
+      {
+        "src": "/images/99-mega-city-the-matrix_1.png",
+        "alt": "Picture"
+      },
+      {
+        "src": "/images/screenshot-2020-12-03-195558_1.jpg",
+        "alt": "Picture"
+      },
+      {
+        "src": "/images/divider-graphic_12.png",
+        "alt": "Picture"
+      },
+      {
+        "src": "/images/divider-graphic_13.png",
+        "alt": "Picture"
+      }
+    ],
+    "embeds": [
+      {
+        "src": "https://www.youtube.com/embed/Lweuy1X9Tcg?wmode=opaque",
+        "title": "YouTube video Lweuy1X9Tcg",
+        "loading": "lazy",
+        "fullscreen": true
+      },
+      {
+        "src": "https://www.youtube.com/embed/rCQjv21V1iA?wmode=opaque",
+        "title": "YouTube video rCQjv21V1iA",
+        "loading": "lazy",
+        "fullscreen": true
+      },
+      {
+        "src": "https://www.youtube.com/embed/VaD_2R1dqU4?wmode=opaque",
+        "title": "YouTube video VaD_2R1dqU4",
+        "loading": "lazy",
+        "fullscreen": true
+      },
+      {
+        "src": "https://www.youtube.com/embed/6IDT3MpSCKI?wmode=opaque",
+        "title": "YouTube video 6IDT3MpSCKI",
+        "loading": "lazy",
+        "fullscreen": true
+      },
+      {
+        "src": "https://www.youtube.com/embed/XaiKDRLUQXA?wmode=opaque",
+        "title": "YouTube video XaiKDRLUQXA",
+        "loading": "lazy",
+        "fullscreen": true
+      },
+      {
+        "src": "https://www.youtube.com/embed/6pV34UyBdQQ?wmode=opaque",
+        "title": "YouTube video 6pV34UyBdQQ",
+        "loading": "lazy",
+        "fullscreen": true
+      },
+      {
+        "src": "https://www.youtube.com/embed/qMzy_De8AxI?wmode=opaque",
+        "title": "YouTube video qMzy_De8AxI",
+        "loading": "lazy",
+        "fullscreen": true
+      },
+      {
+        "src": "https://www.youtube.com/embed/YlgR-LZ7G-0?wmode=opaque",
+        "title": "YouTube video YlgR-LZ7G-0",
+        "loading": "lazy",
+        "fullscreen": true
+      },
+      {
+        "src": "https://www.youtube.com/embed/vkOs-wxZ6_8?wmode=opaque",
+        "title": "YouTube video vkOs-wxZ6_8",
+        "loading": "lazy",
+        "fullscreen": true
+      },
+      {
+        "src": "https://www.youtube.com/embed/VgUbm4GRE1Y?wmode=opaque",
+        "title": "YouTube video VgUbm4GRE1Y",
+        "loading": "lazy",
+        "fullscreen": true
+      },
+      {
+        "src": "https://www.youtube.com/embed/mZT_h4vUJ4Q?wmode=opaque",
+        "title": "YouTube video mZT_h4vUJ4Q",
+        "loading": "lazy",
+        "fullscreen": true
+      },
+      {
+        "src": "https://www.youtube.com/embed/AnY2OED2CGA?wmode=opaque",
+        "title": "YouTube video AnY2OED2CGA",
+        "loading": "lazy",
+        "fullscreen": true
+      },
+      {
+        "src": "https://www.youtube.com/embed/pxaz0f3LCyM?wmode=opaque",
+        "title": "YouTube video pxaz0f3LCyM",
+        "loading": "lazy",
+        "fullscreen": true
+      },
+      {
+        "src": "https://www.youtube.com/embed/OBxMsUxXcXU?wmode=opaque",
+        "title": "YouTube video OBxMsUxXcXU",
+        "loading": "lazy",
+        "fullscreen": true
+      },
+      {
+        "src": "https://www.youtube.com/embed/j_urZ5KDPec?wmode=opaque",
+        "title": "YouTube video j_urZ5KDPec",
+        "loading": "lazy",
+        "fullscreen": true
+      },
+      {
+        "src": "https://www.youtube.com/embed/b-_5P8p25AE?wmode=opaque",
+        "title": "YouTube video b-_5P8p25AE",
+        "loading": "lazy",
+        "fullscreen": true
+      },
+      {
+        "src": "https://www.youtube.com/embed/hA37Aed3yak?wmode=opaque",
+        "title": "YouTube video hA37Aed3yak",
+        "loading": "lazy",
+        "fullscreen": true
+      },
+      {
+        "src": "https://www.youtube.com/embed/-W5I-jaUG0Q?wmode=opaque",
+        "title": "YouTube video -W5I-jaUG0Q",
+        "loading": "lazy",
+        "fullscreen": true
+      },
+      {
+        "src": "https://www.youtube.com/embed/6gL0xQHI0wo?wmode=opaque",
+        "title": "YouTube video 6gL0xQHI0wo",
+        "loading": "lazy",
+        "fullscreen": true
+      },
+      {
+        "src": "https://www.youtube.com/embed/lEJufm6reF0?wmode=opaque",
+        "title": "YouTube video lEJufm6reF0",
+        "loading": "lazy",
+        "fullscreen": true
+      }
+    ]
+  },
+  {
+    "path": "/influence",
+    "title": "Influences in The Matrix",
+    "contentHash": "f3e276f868f5127190f249f4d8ec7298e208d815a1a6d84d401881edbe97a1b0",
+    "headings": [
+      "How are the social and philosophical influences in The Matrix in late 90's?"
+    ],
+    "links": [
+      {
+        "href": "/",
+        "text": "Home",
+        "target": null
+      },
+      {
+        "href": "/",
+        "text": "HOme",
+        "target": null
+      },
+      {
+        "href": "/",
+        "text": "Home",
+        "target": null
+      }
+    ],
+    "images": [],
+    "embeds": []
+  },
+  {
+    "path": "/intro-to-cyberpunk-and-post-cyberpunk",
+    "title": "Intro to Cyberpunk and Post-Cyberpunk",
+    "contentHash": "36e0acc22ea8e60b43be94d482b829a5358177d25ef0e175da252032e3ab78d8",
+    "headings": [
+      "What are Cyberpunk and Post-Cyberpunk?",
+      "Cyberpunk",
+      "Post-Cyberpunk"
+    ],
+    "links": [
+      {
+        "href": "/",
+        "text": "Home",
+        "target": null
+      },
+      {
+        "href": "/cyberpunk-the-matrix-and-post-cyberpunk",
+        "text": "​Cyberpunk, The matrix and Post-Cyberpunk",
+        "target": null
+      },
+      {
+        "href": "/",
+        "text": "Home",
+        "target": null
+      }
+    ],
+    "images": [
+      {
+        "src": "/images/divider-graphic_5_orig.png",
+        "alt": "Picture"
+      },
+      {
+        "src": "/images/divider-graphic_7_orig.png",
+        "alt": "Picture"
+      }
+    ],
+    "embeds": []
+  },
+  {
+    "path": "/jean-baudrillard",
+    "title": "Jean Baudrillard",
+    "contentHash": "45d2b69102d2737ed53a55edb0747bf23f48567b612935f76ca18527d1918540",
+    "headings": [
+      "What is reality? Jean Baudrillard. \"Simulacrum and Simulation\""
+    ],
+    "links": [
+      {
+        "href": "/",
+        "text": "Home",
+        "target": null
+      },
+      {
+        "href": "/influence",
+        "text": "Philosophical and Society Issues",
+        "target": null
+      },
+      {
+        "href": "/",
+        "text": "Home",
+        "target": null
+      }
+    ],
+    "images": [],
+    "embeds": [
+      {
+        "src": "https://www.youtube.com/embed/bf9J35yzM3E?wmode=opaque",
+        "title": "YouTube video bf9J35yzM3E",
+        "loading": "lazy",
+        "fullscreen": true
+      }
+    ]
+  },
+  {
+    "path": "/mise-en-scene",
+    "title": "Mise-en-Scène",
+    "contentHash": "6a8d5814a7549919920f311433edef7d0f1a848765c3a68a534e94ee5c7c54e8",
+    "headings": ["Mise-en-scène", "Different tints", "Screen Transitioning"],
+    "links": [
+      {
+        "href": "/",
+        "text": "Home",
+        "target": null
+      },
+      {
+        "href": "/tech",
+        "text": "Technical perspective",
+        "target": null
+      },
+      {
+        "href": "/",
+        "text": "Home",
+        "target": null
+      }
+    ],
+    "images": [
+      {
+        "src": "/images/mise-en-sc-ne.jpg",
+        "alt": "Picture"
+      },
+      {
+        "src": "/images/divider-graphic_4_orig.png",
+        "alt": "Picture"
+      },
+      {
+        "src": "/images/collage_orig.jpg",
+        "alt": "Picture"
+      },
+      {
+        "src": "/images/divider-graphic_5_orig.png",
+        "alt": "Picture"
+      },
+      {
+        "src": "/images/divider-graphic_6_orig.png",
+        "alt": "Picture"
+      },
+      {
+        "src": "/images/neo-wakesup_orig.jpg",
+        "alt": "Picture"
+      }
+    ],
+    "embeds": []
+  },
+  {
+    "path": "/references",
+    "title": "References",
+    "contentHash": "bf553cddf5a7089afd29305a56e184a21f2813ad1c909c0204d086ac9a3e211e",
+    "headings": ["Bibliography", "​Images"],
+    "links": [
+      {
+        "href": "/",
+        "text": "Home",
+        "target": null
+      },
+      {
+        "href": "/",
+        "text": "Home",
+        "target": null
+      }
+    ],
+    "images": [],
+    "embeds": []
+  },
+  {
+    "path": "/tech",
+    "title": "Tech",
+    "contentHash": "2d6a68cc610cf583a4130a256f2f050ff2562ac0ba18df39c8da36c8bedc9999",
+    "headings": ["How did the Matrix changed Sci-Fi action movies? ​"],
+    "links": [
+      {
+        "href": "/",
+        "text": "Home",
+        "target": null
+      },
+      {
+        "href": "/jean-baudrillard",
+        "text": "Jean Baudrillard's opinion",
+        "target": null
+      },
+      {
+        "href": "/",
+        "text": "Home",
+        "target": null
+      }
+    ],
+    "images": [
+      {
+        "src": "/images/957634499_orig.jpg",
+        "alt": "Picture"
+      },
+      {
+        "src": "/images/472398375_orig.jpg",
+        "alt": "Picture"
+      },
+      {
+        "src": "/images/809775166_orig.jpg",
+        "alt": "Picture"
+      }
+    ],
+    "embeds": [
+      {
+        "src": "https://www.youtube.com/embed/I1ZbUs1xwes?wmode=opaque",
+        "title": "YouTube video I1ZbUs1xwes",
+        "loading": "lazy",
+        "fullscreen": true
+      }
+    ]
+  },
+  {
+    "path": "/the-choice",
+    "title": "The Choice",
+    "contentHash": "078d657edca5244aaee33b857295ea347f5ee167eae7b2558fa42664c4721cba",
+    "headings": ["Blue pill vs Red pill​"],
+    "links": [
+      {
+        "href": "/",
+        "text": "Home",
+        "target": null
+      },
+      {
+        "href": "/mise-en-scene",
+        "text": "Take Red Pill",
+        "target": null
+      },
+      {
+        "href": "/blue-pill",
+        "text": "Take Blue Pill",
+        "target": null
+      },
+      {
+        "href": "/",
+        "text": "Home",
+        "target": null
+      }
+    ],
+    "images": [],
+    "embeds": []
+  },
+  {
+    "path": "/the-matrix-film",
+    "title": "The Matrix (1999)",
+    "contentHash": "3874c2c1c6bff59f682d83e3e95178d546b4620ac3a9596288d1f3bf3553f8d4",
+    "headings": ["The Matrix (1999)"],
+    "links": [
+      {
+        "href": "/",
+        "text": "Home",
+        "target": null
+      },
+      {
+        "href": "/intro-to-cyberpunk-and-post-cyberpunk",
+        "text": "Cyberpunk and post-cyberpunk",
+        "target": null
+      },
+      {
+        "href": "/",
+        "text": "Home",
+        "target": null
+      }
+    ],
+    "images": [
+      {
+        "src": "/images/divider-graphic_5.png",
+        "alt": "Picture"
+      }
+    ],
+    "embeds": []
+  }
+]

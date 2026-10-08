@@ -1,0 +1,23 @@
+/* Keyboard focus, mobile menu visibility, and reduced motion. */
+button.hamburger {
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+}
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #75ef89;
+  outline-offset: 5px;
+}
+.mobile-nav[inert] {
+  visibility: hidden;
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0s !important;
+    scroll-behavior: auto !important;
+  }
+}
