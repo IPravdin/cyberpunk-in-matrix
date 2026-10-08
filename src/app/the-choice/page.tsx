@@ -1,5 +1,8 @@
-// Static content migrated from the frozen legacy checkpoint.
-import '../../styles/globals.css';
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "The Choice",
+};
 
 export default function Page() {
   return (
@@ -29,10 +32,19 @@ export default function Page() {
                               <tr>
                                 <td className="wsite-multicol-col tw:[width:36.670071501532%] tw:[padding:0_15px]">
                                   {"\n"}
-                                  <h2 className="wsite-content-title tw:[text-align:left]"><font size={"6"}>{"Blue pill vs Red pill"}</font><font size={"6"}>{"​"}</font></h2>
+                                  <h2 className="wsite-content-title tw:[text-align:left]">
+                                    <font size={"6"}>
+                                      {"Blue pill vs Red pill"}
+                                    </font>
+                                    <font size={"6"}>{"​"}</font>
+                                  </h2>
                                   {"\n"}
                                 </td>
-                                <td className="wsite-multicol-col tw:[width:63.329928498468%] tw:[padding:0_15px]">{"\n"}<div className="tw:[height:50px]"></div>{"\n"}</td>
+                                <td className="wsite-multicol-col tw:[width:63.329928498468%] tw:[padding:0_15px]">
+                                  {"\n"}
+                                  <div className="tw:[height:50px]"></div>
+                                  {"\n"}
+                                </td>
                               </tr>
                             </tbody>
                           </table>
@@ -79,14 +91,32 @@ export default function Page() {
                                   <div className="paragraph tw:[text-align:left]">
                                     <ol>
                                       <li>
-                                        <font size={"4"}>{"Red color has represented aggression, dominance, warnings of danger, it could be for psychological or scientific (higher visibility) reasons."}</font>
+                                        <font size={"4"}>
+                                          {
+                                            "Red color has represented aggression, dominance, warnings of danger, it could be for psychological or scientific (higher visibility) reasons."
+                                          }
+                                        </font>
                                       </li>
-                                      <li><font size={"4"}>{"While blue color induces a feeling of peacefulness, calmness and reliability."}</font></li>
                                       <li>
-                                        <font size={"4"}>{"In The Matrix (1999) movie, blue pill signifies the fake reality, which is calm and blissful like the color and red pill signifies the true reality, a symbol of upcoming danger or a significant change to normal life seen till now in the movie. "}</font>
+                                        <font size={"4"}>
+                                          {
+                                            "While blue color induces a feeling of peacefulness, calmness and reliability."
+                                          }
+                                        </font>
                                       </li>
                                       <li>
-                                        <font size={"4"}>{"\"The blue pill means that he can go back to living his simulated life as Thomas Anderson by day and Neo by night, while the red pill means that he must face the grim reality of the world and accept his part in working for a better one\" "}</font>
+                                        <font size={"4"}>
+                                          {
+                                            "In The Matrix (1999) movie, blue pill signifies the fake reality, which is calm and blissful like the color and red pill signifies the true reality, a symbol of upcoming danger or a significant change to normal life seen till now in the movie. "
+                                          }
+                                        </font>
+                                      </li>
+                                      <li>
+                                        <font size={"4"}>
+                                          {
+                                            '"The blue pill means that he can go back to living his simulated life as Thomas Anderson by day and Neo by night, while the red pill means that he must face the grim reality of the world and accept his part in working for a better one" '
+                                          }
+                                        </font>
                                         <span>{"("}</span>
                                         <span>{"Haar, Rebecca,  and "}</span>
                                         <span>{"McFarlane"}</span>
@@ -98,7 +128,11 @@ export default function Page() {
                                   </div>
                                   {"\n"}
                                 </td>
-                                <td className="wsite-multicol-col tw:[width:54.282964388835%] tw:[padding:0_45px]">{"\n"}<div className="tw:[height:83px]"></div>{"\n"}</td>
+                                <td className="wsite-multicol-col tw:[width:54.282964388835%] tw:[padding:0_45px]">
+                                  {"\n"}
+                                  <div className="tw:[height:83px]"></div>
+                                  {"\n"}
+                                </td>
                               </tr>
                             </tbody>
                           </table>
@@ -141,9 +175,14 @@ export default function Page() {
                                   <div className="tw:[text-align:center]">
                                     <div className="tw:[height:10px] tw:[overflow:hidden]"></div>
                                     {"\n"}
-                                    <a className="wsite-button" href={"/mise-en-scene"}>
+                                    <a
+                                      className="wsite-button"
+                                      href={"/mise-en-scene"}
+                                    >
                                       {"\n"}
-                                      <span className="wsite-button-inner">{"Take Red Pill"}</span>
+                                      <span className="wsite-button-inner">
+                                        {"Take Red Pill"}
+                                      </span>
                                       {"\n"}
                                     </a>
                                     {"\n"}
@@ -156,9 +195,14 @@ export default function Page() {
                                   <div className="tw:[text-align:center]">
                                     <div className="tw:[height:10px] tw:[overflow:hidden]"></div>
                                     {"\n"}
-                                    <a className="wsite-button" href={"/blue-pill"}>
+                                    <a
+                                      className="wsite-button"
+                                      href={"/blue-pill"}
+                                    >
                                       {"\n"}
-                                      <span className="wsite-button-inner">{"Take Blue Pill"}</span>
+                                      <span className="wsite-button-inner">
+                                        {"Take Blue Pill"}
+                                      </span>
                                       {"\n"}
                                     </a>
                                     {"\n"}

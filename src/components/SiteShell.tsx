@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState, type ReactNode } from 'react';
 
-export function SiteShell({ home = false, children }: { home?: boolean; children: ReactNode }) {
+export function SiteShell({ children }: { children: ReactNode }) {
   const [open, setOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
   const openerRef = useRef<HTMLButtonElement>(null);
@@ -78,7 +78,7 @@ export function SiteShell({ home = false, children }: { home?: boolean; children
               </div>
               <div aria-label="Main navigation" className="nav desktop-nav">
                 <ul>
-                  <li className="wsite-menu-item-wrap" id={home ? 'active' : 'pg450014579290659988'}>
+                  <li className="wsite-menu-item-wrap">
                     <a className="wsite-menu-item" href="/">Home</a>
                   </li>
                 </ul>
@@ -92,7 +92,7 @@ export function SiteShell({ home = false, children }: { home?: boolean; children
       <div ref={menuRef} aria-label="Main navigation" className="nav mobile-nav" id="navMobile" inert={!open}>
         <button aria-controls="navMobile" aria-expanded={open} aria-label="Menu" className="hamburger" onClick={toggleMenu} type="button"><span /></button>
         <ul>
-          <li className="wsite-menu-item-wrap" id={home ? undefined : 'pg450014579290659988'}>
+          <li className="wsite-menu-item-wrap" >
             <a className="wsite-menu-item" href="/">Home</a>
           </li>
         </ul>

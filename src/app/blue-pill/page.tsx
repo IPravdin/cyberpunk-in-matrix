@@ -1,5 +1,8 @@
-// Static content migrated from the frozen legacy checkpoint.
-import '../../styles/globals.css';
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Blue Pill",
+};
 
 export default function Page() {
   return (
@@ -27,7 +30,11 @@ export default function Page() {
                     <div className="tw:[text-align:center]">
                       <div className="tw:[height:10px] tw:[overflow:hidden]"></div>
                       {"\n"}
-                      <a className="wsite-button" href={"/"}>{"\n"}<span className="wsite-button-inner">{"Home"}</span>{"\n"}</a>
+                      <a className="wsite-button" href={"/"}>
+                        {"\n"}
+                        <span className="wsite-button-inner">{"Home"}</span>
+                        {"\n"}
+                      </a>
                       {"\n"}
                       <div className="tw:[height:10px] tw:[overflow:hidden]"></div>
                     </div>

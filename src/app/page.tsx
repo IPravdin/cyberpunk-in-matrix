@@ -1,5 +1,5 @@
 // Static content migrated from the frozen legacy checkpoint.
-import '../../styles/globals.css';
+import '../styles/globals.css';
 
 export default function Page() {
   return (

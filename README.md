@@ -27,17 +27,12 @@ Stop it with Ctrl+C. Select another port with `PORT=8080 pnpm dev`.
 - Each page owns an App Router folder containing `page.tsx` and `layout.tsx`.
   For example, `src/app/contents/page.tsx` serves `/contents` in development, with
   `/contents.html` retained as a compatibility URL and the production filename.
-  `src/app/(home)/page.tsx` serves `/`; the route group keeps the homepage in
+  `src/app/page.tsx` serves `/`; the route group keeps the homepage in
   its own folder without adding a URL segment. Development rewrites serve `/index.html` from `/` and named `.html`
   URLs from their extension-free routes. Static export emits the original
   `.html` filenames directly.
-- Page content is server-rendered JSX directly in each `page.tsx`. Its adjacent
-  `layout.tsx` exports static Metadata API values and the body classes used by the stylesheets.
+- Page content is server-rendered JSX directly in each `page.tsx`.
   There is no catch-all route, registry, or route resolver.
-- Each route layout uses `src/components/SiteDocument.tsx` for common document
-  markup and compatibility stylesheets. Separate root layouts preserve the
-  body styling in server-rendered HTML, even without JavaScript. Unused Weebly
-  markers such as `wsite-page-*` and `wsite-background-*` have been removed.
 - Shared layout, mobile navigation, focus handling, and scroll behavior live in
   `src/components/SiteShell.tsx`, the only authored component with `'use client'`.
   Page links use extension-free URLs and ordinary anchors to preserve document navigation and the

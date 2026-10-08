@@ -1,5 +1,8 @@
-// Static content migrated from the frozen legacy checkpoint.
-import '../../styles/globals.css';
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Tech",
+};
 
 export default function Page() {
   return (
@@ -32,13 +35,24 @@ export default function Page() {
                                   <div className="tw:[height:50px]"></div>
                                   {"\n"}
                                   <h2 className="wsite-content-title tw:[text-align:left]">
-                                    <font size={"6"}><span className="tw:[font-weight:bold]">{"How did the Matrix changed Sci-Fi action movies?"}</span>{" "}</font>
+                                    <font size={"6"}>
+                                      <span className="tw:[font-weight:bold]">
+                                        {
+                                          "How did the Matrix changed Sci-Fi action movies?"
+                                        }
+                                      </span>
+                                      {" "}
+                                    </font>
                                     <br />
                                     <font size={"6"}>{"​"}</font>
                                   </h2>
                                   {"\n"}
                                 </td>
-                                <td className="wsite-multicol-col tw:[width:63.329928498468%] tw:[padding:0_15px]">{"\n"}<div className="tw:[height:50px]"></div>{"\n"}</td>
+                                <td className="wsite-multicol-col tw:[width:63.329928498468%] tw:[padding:0_15px]">
+                                  {"\n"}
+                                  <div className="tw:[height:50px]"></div>
+                                  {"\n"}
+                                </td>
                               </tr>
                             </tbody>
                           </table>
@@ -82,25 +96,68 @@ export default function Page() {
                                   {"\n"}
                                   <div className="paragraph tw:[text-align:left]">
                                     <ol>
-                                      <li><font size={"4"}>{"The Matrix (1999) added level of complexity to a sci-fi action movie, which defined a new standard for the future movies."}</font></li>
+                                      <li>
+                                        <font size={"4"}>
+                                          {
+                                            "The Matrix (1999) added level of complexity to a sci-fi action movie, which defined a new standard for the future movies."
+                                          }
+                                        </font>
+                                      </li>
                                       <li>
                                         <font size={"4"}>
                                           <span>
-                                            <span>{"\"Bullet time\" the iconic visual effect created in the Matrix (1999), which allows the viewer to explore a moment progressing in slow-motion as the camera appears to orbit around the scene at normal speed.  "}</span>
+                                            <span>
+                                              {
+                                                '"Bullet time" the iconic visual effect created in the Matrix (1999), which allows the viewer to explore a moment progressing in slow-motion as the camera appears to orbit around the scene at normal speed.  '
+                                              }
+                                            </span>
                                           </span>
                                           <span>{" "}</span>
                                         </font>
                                       </li>
                                       <li>
-                                        <font size={"4"}>{"\"Stylistic way of showing you’re in constructed reality where time and space are not the same\"(Flashback FilmMaking, \"What is Bullet Time 'The Matrix' Behind The Scenes\". YouTube Video). "}</font>
+                                        <font size={"4"}>
+                                          {
+                                            '"Stylistic way of showing you’re in constructed reality where time and space are not the same"(Flashback FilmMaking, "What is Bullet Time \'The Matrix\' Behind The Scenes". YouTube Video). '
+                                          }
+                                        </font>
                                       </li>
-                                      <li><font size={"4"}><span><span>{"Matrix also shown the \"time-slice\" effect with completely frozen characters and surroundings. "}</span></span></font></li>
-                                      <li><font size={"4"}>{"Orbital rig consisted of 120 camera’s 2 motion cameras  "}</font>{"​"}</li>
-                                      <li><font size={"4"}>{"Max Payne used the same bullet time mechanics."}</font></li>
+                                      <li>
+                                        <font size={"4"}>
+                                          <span>
+                                            <span>
+                                              {
+                                                'Matrix also shown the "time-slice" effect with completely frozen characters and surroundings. '
+                                              }
+                                            </span>
+                                          </span>
+                                        </font>
+                                      </li>
+                                      <li>
+                                        <font size={"4"}>
+                                          {
+                                            "Orbital rig consisted of 120 camera’s 2 motion cameras  "
+                                          }
+                                        </font>
+                                        {"​"}
+                                      </li>
+                                      <li>
+                                        <font size={"4"}>
+                                          {
+                                            "Max Payne used the same bullet time mechanics."
+                                          }
+                                        </font>
+                                      </li>
                                     </ol>
                                     <br />
                                     <br />
-                                    <strong><font size={"4"}>{"​For more info about bullet time watch this video: "}</font></strong>
+                                    <strong>
+                                      <font size={"4"}>
+                                        {
+                                          "​For more info about bullet time watch this video: "
+                                        }
+                                      </font>
+                                    </strong>
                                   </div>
                                   {"\n"}
                                   <div className="tw:[margin-bottom:10px] tw:[margin-top:10px]">
@@ -108,7 +165,15 @@ export default function Page() {
                                       {"\n"}
                                       <div className="wsite-youtube-container">
                                         {"\n"}
-                                        <iframe allowFullScreen={true} frameBorder={"0"} loading={"lazy"} src={"https://www.youtube.com/embed/I1ZbUs1xwes?wmode=opaque"} title={"YouTube video I1ZbUs1xwes"}></iframe>
+                                        <iframe
+                                          allowFullScreen={true}
+                                          frameBorder={"0"}
+                                          loading={"lazy"}
+                                          src={
+                                            "https://www.youtube.com/embed/I1ZbUs1xwes?wmode=opaque"
+                                          }
+                                          title={"YouTube video I1ZbUs1xwes"}
+                                        ></iframe>
                                         {"\n"}
                                       </div>
                                       {"\n"}
@@ -123,7 +188,15 @@ export default function Page() {
                                   <div>
                                     <div className="wsite-image wsite-image-border-none tw:[padding-top:0px] tw:[padding-bottom:0px] tw:[margin-left:0px] tw:[margin-right:0px] tw:[text-align:right]">
                                       {"\n"}
-                                      <a>{"\n"}<img alt={"Picture"} src={"/images/957634499_orig.jpg"} className="tw:[width:auto] tw:[max-width:100%]" />{"\n"}</a>
+                                      <a>
+                                        {"\n"}
+                                        <img
+                                          alt={"Picture"}
+                                          src={"/images/957634499_orig.jpg"}
+                                          className="tw:[width:auto] tw:[max-width:100%]"
+                                        />
+                                        {"\n"}
+                                      </a>
                                       {"\n"}
                                       <div className="tw:[display:block] tw:[font-size:90%]"></div>
                                       {"\n"}
@@ -135,7 +208,15 @@ export default function Page() {
                                   <div>
                                     <div className="wsite-image wsite-image-border-none tw:[padding-top:0px] tw:[padding-bottom:0px] tw:[margin-left:0px] tw:[margin-right:0px] tw:[text-align:right]">
                                       {"\n"}
-                                      <a>{"\n"}<img alt={"Picture"} src={"/images/472398375_orig.jpg"} className="tw:[width:auto] tw:[max-width:100%]" />{"\n"}</a>
+                                      <a>
+                                        {"\n"}
+                                        <img
+                                          alt={"Picture"}
+                                          src={"/images/472398375_orig.jpg"}
+                                          className="tw:[width:auto] tw:[max-width:100%]"
+                                        />
+                                        {"\n"}
+                                      </a>
                                       {"\n"}
                                       <div className="tw:[display:block] tw:[font-size:90%]"></div>
                                       {"\n"}
@@ -147,7 +228,15 @@ export default function Page() {
                                   <div>
                                     <div className="wsite-image wsite-image-border-none tw:[padding-top:10px] tw:[padding-bottom:0px] tw:[margin-left:0px] tw:[margin-right:0px] tw:[text-align:left]">
                                       {"\n"}
-                                      <a>{"\n"}<img alt={"Picture"} src={"/images/809775166_orig.jpg"} className="tw:[width:auto] tw:[max-width:100%]" />{"\n"}</a>
+                                      <a>
+                                        {"\n"}
+                                        <img
+                                          alt={"Picture"}
+                                          src={"/images/809775166_orig.jpg"}
+                                          className="tw:[width:auto] tw:[max-width:100%]"
+                                        />
+                                        {"\n"}
+                                      </a>
                                       {"\n"}
                                       <div className="tw:[display:block] tw:[font-size:90%]"></div>
                                       {"\n"}
@@ -172,7 +261,9 @@ export default function Page() {
                       {"\n"}
                       <a className="wsite-button" href={"/jean-baudrillard"}>
                         {"\n"}
-                        <span className="wsite-button-inner">{"Jean Baudrillard's opinion"}</span>
+                        <span className="wsite-button-inner">
+                          {"Jean Baudrillard's opinion"}
+                        </span>
                         {"\n"}
                       </a>
                       {"\n"}
