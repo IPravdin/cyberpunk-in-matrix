@@ -4,9 +4,10 @@ from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urlsplit, unquote
 import re
+import sys
 
 ROOT = Path(__file__).resolve().parents[1]
-PUBLIC = ROOT / 'public'
+PUBLIC = ROOT / (sys.argv[1] if len(sys.argv) > 1 else 'public')
 CSS_URL = re.compile(r'url\(\s*([\'"]?)(.*?)\1\s*\)', re.I)
 errors = []
 referenced = set()

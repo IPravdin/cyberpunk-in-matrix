@@ -1,0 +1,16 @@
+/* Keep utilities unlayered and after the theme: authored formatting previously
+   used inline styles. No Preflight, and a prefix avoids legacy class names. */
+@import 'tailwindcss/theme.css' prefix(tw);
+@import 'tailwindcss/utilities.css' prefix(tw);
+@source '../';
+
+.wsite-headline-paragraph,
+.wsite-header-section .paragraph {
+  font-family: 'Oswald' !important;
+  letter-spacing: 5px !important;
+}
+
+@media screen and (min-width: 767px) {
+  .wsite-headline-paragraph,
+  .wsite-header-section .paragraph { font-size: 12px !important; }
+}

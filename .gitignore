@@ -4,3 +4,9 @@ node_modules/
 .venv/
 __pycache__/
 .DS_Store
+.next/
+out/
+.legacy/
+test-results/
+playwright-report/
+*.tsbuildinfo

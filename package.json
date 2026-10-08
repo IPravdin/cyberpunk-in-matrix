@@ -2,11 +2,46 @@
   "name": "cyberpunk-in-matrix",
   "version": "1.0.0",
   "private": true,
-  "description": "Portable static archive of Cyberpunk in The Matrix",
+  "description": "Cyberpunk in The Matrix — incremental Next.js and Tailwind migration",
+  "packageManager": "pnpm@10.30.2",
   "scripts": {
-    "start": "node scripts/serve.mjs",
-    "dev": "node scripts/serve.mjs",
-    "check": "python3 scripts/check.py"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "check:export": "node scripts/check-export.mjs",
+    "test:export": "MIGRATION_TARGET=export playwright test",
+    "test:next": "MIGRATION_TARGET=next playwright test",
+    "check": "pnpm lint && pnpm typecheck && pnpm check:legacy && pnpm test",
+    "lint": "eslint . --max-warnings=0",
+    "typecheck": "next typegen && tsc --noEmit",
+    "test": "playwright test",
+    "test:legacy": "MIGRATION_TARGET=legacy playwright test",
+    "legacy:build": "node scripts/build-legacy.mjs",
+    "legacy:dev": "node scripts/build-legacy.mjs && SITE_DIR=.legacy node scripts/serve.mjs",
+    "check:legacy": "node scripts/build-legacy.mjs && python3 scripts/check.py .legacy"
   },
-  "engines": { "node": ">=18" }
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@playwright/test": "1.64.0",
+    "@tailwindcss/postcss": "4.3.3",
+    "@types/node": "22.20.5",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "cheerio": "1.2.0",
+    "eslint": "10.12.0",
+    "eslint-plugin-react-hooks": "7.1.1",
+    "globals": "17.13.0",
+    "postcss": "8.5.29",
+    "tailwindcss": "4.3.3",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.71.1"
+  },
+  "dependencies": {
+    "next": "16.4.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  }
 }

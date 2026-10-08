@@ -1,10 +1,11 @@
-// Local preview only. Deploy the public directory with a static web host.
+// Local static preview for the legacy fallback and the Next.js export.
 import { createServer } from 'node:http';
 import { readFile, stat } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { resolve, extname, sep } from 'node:path';
 
-const root = fileURLToPath(new URL('../public/', import.meta.url));
+const projectRoot = fileURLToPath(new URL('../', import.meta.url));
+const root = resolve(projectRoot, process.env.SITE_DIR || 'public');
 const port = Number(process.env.PORT || 4173);
 const types = {
   '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8',
