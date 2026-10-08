@@ -8,13 +8,13 @@ export default function Page() {
       {"\n"}
       <div className="main-wrap">
         {"\n"}
-        <div className="wsite-elements wsite-not-footer" id={"wsite-content"}>
+        <div className="wsite-not-footer" id={"wsite-content"}>
           {"\n"}
           <div className="wsite-section-wrap">
             {"\n"}
-            <div className="wsite-section wsite-body-section wsite-section-bg-image wsite-background-53 tw:[height:467px] tw:[background-image:url(/images/271456960.jpg)] tw:[background-repeat:no-repeat] tw:[background-position:undefined_undefined] tw:[background-size:cover] tw:[background-color:transparent]">
+            <div className="wsite-section wsite-body-section tw:[height:467px] tw:[background-image:url(/images/271456960.jpg)] tw:[background-repeat:no-repeat] tw:[background-position:undefined_undefined] tw:[background-size:cover] tw:[background-color:transparent]">
               {"\n"}
-              <div className="wsite-section-content">{"\n"}<div className="container">{"\n"}<div className="wsite-section-elements">{"\n"}</div>{"\n"}</div>{"\n"}</div>
+              <div className="wsite-section-content">{"\n"}<div className="container">{"\n"}<div>{"\n"}</div>{"\n"}</div>{"\n"}</div>
               {"\n"}
             </div>
             {"\n"}
@@ -22,19 +22,19 @@ export default function Page() {
           {"\n"}
           <div className="wsite-section-wrap">
             {"\n"}
-            <div className="wsite-section wsite-body-section wsite-background-40 tw:[height:auto]">
+            <div className="wsite-section wsite-body-section tw:[height:auto]">
               {"\n"}
               <div className="wsite-section-content">
                 {"\n"}
                 <div className="container">
                   {"\n"}
-                  <div className="wsite-section-elements">
+                  <div>
                     {"\n"}
-                    <div className="wsite-spacer tw:[height:50px]"></div>
+                    <div className="tw:[height:50px]"></div>
                     {"\n"}
                     <h2 className="wsite-content-title tw:[text-align:left]"><strong><font size={"6"}>{"What are Cyberpunk and Post-Cyberpunk?"}</font></strong></h2>
                     {"\n"}
-                    <div className="wsite-spacer tw:[height:50px]"></div>
+                    <div className="tw:[height:50px]"></div>
                     {"\n"}
                     <h2 className="wsite-content-title">{"Cyberpunk"}</h2>
                     {"\n"}
@@ -63,7 +63,7 @@ export default function Page() {
                       </font>
                     </div>
                     {"\n"}
-                    <div className="wsite-spacer tw:[height:50px]"></div>
+                    <div className="tw:[height:50px]"></div>
                     {"\n"}
                     <h2 className="wsite-content-title">{"Post-Cyberpunk"}</h2>
                     {"\n"}
@@ -99,13 +99,13 @@ export default function Page() {
           {"\n"}
           <div className="wsite-section-wrap">
             {"\n"}
-            <div className="wsite-section wsite-body-section wsite-background-42">
+            <div className="wsite-section wsite-body-section">
               {"\n"}
               <div className="wsite-section-content">
                 {"\n"}
                 <div className="container">
                   {"\n"}
-                  <div className="wsite-section-elements">
+                  <div>
                     {"\n"}
                     <div className="paragraph">
                       <strong>
@@ -118,7 +118,7 @@ export default function Page() {
                     <div className="tw:[text-align:center]">
                       <div className="tw:[height:10px] tw:[overflow:hidden]"></div>
                       {"\n"}
-                      <a className="wsite-button wsite-button-small wsite-button-normal" href={"/cyberpunk-the-matrix-and-post-cyberpunk"}>
+                      <a className="wsite-button" href={"/cyberpunk-the-matrix-and-post-cyberpunk"}>
                         {"\n"}
                         <span className="wsite-button-inner">{"​Cyberpunk, The matrix and Post-Cyberpunk"}</span>
                         {"\n"}

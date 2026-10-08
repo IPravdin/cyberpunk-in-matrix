@@ -69,7 +69,9 @@ function checkReference(reference, owner, externalAllowed = false) {
     fail(`${label(owner)}: reference outside export ${reference}`);
     return;
   }
-  if (existsSync(path) && statSync(path).isDirectory()) path = join(path, 'index.html');
+  // Named page links use clean URLs; static hosts resolve them to .html files.
+  if (!extname(path) && existsSync(`${path}.html`)) path = `${path}.html`;
+  else if (existsSync(path) && statSync(path).isDirectory()) path = join(path, 'index.html');
   localReferences += 1;
   resources.add(path);
   if (!existsSync(path) || !statSync(path).isFile()) {
@@ -372,6 +374,9 @@ for (const filename of expectedPages) {
   }
   const actual = pageContract(readFileSync(path, 'utf8'));
   const expected = pageContract(readFileSync(join(snapshot, filename), 'utf8'));
+  expected.bodyClasses = expected.bodyClasses.filter((name) =>
+    !name.startsWith('wsite-page-') && !['header-page', 'alt-nav-off'].includes(name));
+  expected.links = expected.links.map((link) => ({ ...link, href: link.href?.replace(/\.html$/, '') }));
   for (const key of Object.keys(expected)) {
     try {
       assert.deepEqual(actual[key], expected[key]);

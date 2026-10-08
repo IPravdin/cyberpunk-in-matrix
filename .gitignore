@@ -5,6 +5,7 @@ node_modules/
 __pycache__/
 .DS_Store
 .next/
+.next-test/
 out/
 .legacy/
 test-results/

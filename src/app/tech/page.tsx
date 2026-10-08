@@ -8,28 +8,28 @@ export default function Page() {
       {"\n"}
       <div className="main-wrap">
         {"\n"}
-        <div className="wsite-elements wsite-not-footer" id={"wsite-content"}>
+        <div className="wsite-not-footer" id={"wsite-content"}>
           {"\n"}
           <div className="wsite-section-wrap">
             {"\n"}
-            <div className="wsite-section wsite-body-section wsite-section-bg-image wsite-background-23 tw:[height:481px] tw:[background-image:url(/images/1965597980.gif)] tw:[background-repeat:no-repeat] tw:[background-position:50%_50%] tw:[background-size:cover] tw:[background-color:transparent]">
+            <div className="wsite-section wsite-body-section tw:[height:481px] tw:[background-image:url(/images/1965597980.gif)] tw:[background-repeat:no-repeat] tw:[background-position:50%_50%] tw:[background-size:cover] tw:[background-color:transparent]">
               {"\n"}
               <div className="wsite-section-content">
                 {"\n"}
                 <div className="container">
                   {"\n"}
-                  <div className="wsite-section-elements">
+                  <div>
                     {"\n"}
                     <div>
                       <div className="wsite-multicol">
-                        <div className="wsite-multicol-table-wrap tw:[margin:0_-15px]">
+                        <div className="tw:[margin:0_-15px]">
                           {"\n"}
                           <table className="wsite-multicol-table">
-                            <tbody className="wsite-multicol-tbody">
-                              <tr className="wsite-multicol-tr">
+                            <tbody>
+                              <tr>
                                 <td className="wsite-multicol-col tw:[width:36.670071501532%] tw:[padding:0_15px]">
                                   {"\n"}
-                                  <div className="wsite-spacer tw:[height:50px]"></div>
+                                  <div className="tw:[height:50px]"></div>
                                   {"\n"}
                                   <h2 className="wsite-content-title tw:[text-align:left]">
                                     <font size={"6"}><span className="tw:[font-weight:bold]">{"How did the Matrix changed Sci-Fi action movies?"}</span>{" "}</font>
@@ -38,7 +38,7 @@ export default function Page() {
                                   </h2>
                                   {"\n"}
                                 </td>
-                                <td className="wsite-multicol-col tw:[width:63.329928498468%] tw:[padding:0_15px]">{"\n"}<div className="wsite-spacer tw:[height:50px]"></div>{"\n"}</td>
+                                <td className="wsite-multicol-col tw:[width:63.329928498468%] tw:[padding:0_15px]">{"\n"}<div className="tw:[height:50px]"></div>{"\n"}</td>
                               </tr>
                             </tbody>
                           </table>
@@ -47,7 +47,7 @@ export default function Page() {
                       </div>
                     </div>
                     {"\n"}
-                    <div className="wsite-spacer tw:[height:24px]"></div>
+                    <div className="tw:[height:24px]"></div>
                     {"\n"}
                   </div>
                   {"\n"}
@@ -61,24 +61,24 @@ export default function Page() {
           {"\n"}
           <div className="wsite-section-wrap">
             {"\n"}
-            <div className="wsite-section wsite-body-section wsite-background-25">
+            <div className="wsite-section wsite-body-section">
               {"\n"}
               <div className="wsite-section-content">
                 {"\n"}
                 <div className="container">
                   {"\n"}
-                  <div className="wsite-section-elements">
+                  <div>
                     {"\n"}
                     <div>
                       <div className="wsite-multicol">
-                        <div className="wsite-multicol-table-wrap tw:[margin:0_-45px]">
+                        <div className="tw:[margin:0_-45px]">
                           {"\n"}
                           <table className="wsite-multicol-table">
-                            <tbody className="wsite-multicol-tbody">
-                              <tr className="wsite-multicol-tr">
+                            <tbody>
+                              <tr>
                                 <td className="wsite-multicol-col tw:[width:45.717035611165%] tw:[padding:0_45px]">
                                   {"\n"}
-                                  <div className="wsite-spacer tw:[height:24px]"></div>
+                                  <div className="tw:[height:24px]"></div>
                                   {"\n"}
                                   <div className="paragraph tw:[text-align:left]">
                                     <ol>
@@ -103,8 +103,8 @@ export default function Page() {
                                     <strong><font size={"4"}>{"​For more info about bullet time watch this video: "}</font></strong>
                                   </div>
                                   {"\n"}
-                                  <div className="wsite-youtube tw:[margin-bottom:10px] tw:[margin-top:10px]">
-                                    <div className="wsite-youtube-wrapper wsite-youtube-size-auto wsite-youtube-align-center">
+                                  <div className="tw:[margin-bottom:10px] tw:[margin-top:10px]">
+                                    <div className="wsite-youtube-wrapper wsite-youtube-align-center">
                                       {"\n"}
                                       <div className="wsite-youtube-container">
                                         {"\n"}
@@ -118,7 +118,7 @@ export default function Page() {
                                 </td>
                                 <td className="wsite-multicol-col tw:[width:54.282964388835%] tw:[padding:0_45px]">
                                   {"\n"}
-                                  <div className="wsite-spacer tw:[height:50px]"></div>
+                                  <div className="tw:[height:50px]"></div>
                                   {"\n"}
                                   <div>
                                     <div className="wsite-image wsite-image-border-none tw:[padding-top:0px] tw:[padding-bottom:0px] tw:[margin-left:0px] tw:[margin-right:0px] tw:[text-align:right]">
@@ -130,7 +130,7 @@ export default function Page() {
                                     </div>
                                   </div>
                                   {"\n"}
-                                  <div className="wsite-spacer tw:[height:25px]"></div>
+                                  <div className="tw:[height:25px]"></div>
                                   {"\n"}
                                   <div>
                                     <div className="wsite-image wsite-image-border-none tw:[padding-top:0px] tw:[padding-bottom:0px] tw:[margin-left:0px] tw:[margin-right:0px] tw:[text-align:right]">
@@ -142,7 +142,7 @@ export default function Page() {
                                     </div>
                                   </div>
                                   {"\n"}
-                                  <div className="wsite-spacer tw:[height:29px]"></div>
+                                  <div className="tw:[height:29px]"></div>
                                   {"\n"}
                                   <div>
                                     <div className="wsite-image wsite-image-border-none tw:[padding-top:10px] tw:[padding-bottom:0px] tw:[margin-left:0px] tw:[margin-right:0px] tw:[text-align:left]">
@@ -154,7 +154,7 @@ export default function Page() {
                                     </div>
                                   </div>
                                   {"\n"}
-                                  <div className="wsite-spacer tw:[height:83px]"></div>
+                                  <div className="tw:[height:83px]"></div>
                                   {"\n"}
                                 </td>
                               </tr>
@@ -165,12 +165,12 @@ export default function Page() {
                       </div>
                     </div>
                     {"\n"}
-                    <div className="wsite-spacer tw:[height:49px]"></div>
+                    <div className="tw:[height:49px]"></div>
                     {"\n"}
                     <div className="tw:[text-align:center]">
                       <div className="tw:[height:10px] tw:[overflow:hidden]"></div>
                       {"\n"}
-                      <a className="wsite-button wsite-button-small wsite-button-normal" href={"/jean-baudrillard"}>
+                      <a className="wsite-button" href={"/jean-baudrillard"}>
                         {"\n"}
                         <span className="wsite-button-inner">{"Jean Baudrillard's opinion"}</span>
                         {"\n"}

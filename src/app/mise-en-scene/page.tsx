@@ -8,19 +8,19 @@ export default function Page() {
       {"\n"}
       <div className="main-wrap">
         {"\n"}
-        <div className="wsite-elements wsite-not-footer" id={"wsite-content"}>
+        <div className="wsite-not-footer" id={"wsite-content"}>
           {"\n"}
           <div className="wsite-section-wrap">
             {"\n"}
-            <div className="wsite-section wsite-body-section wsite-background-26">
+            <div className="wsite-section wsite-body-section">
               {"\n"}
               <div className="wsite-section-content">
                 {"\n"}
                 <div className="container">
                   {"\n"}
-                  <div className="wsite-section-elements">
+                  <div>
                     {"\n"}
-                    <div className="wsite-spacer tw:[height:50px]"></div>
+                    <div className="tw:[height:50px]"></div>
                     {"\n"}
                     <div>
                       <div className="wsite-image wsite-image-border-none tw:[padding-top:10px] tw:[padding-bottom:0px] tw:[margin-left:0px] tw:[margin-right:0px] tw:[text-align:center]">
@@ -65,7 +65,7 @@ export default function Page() {
                       {"The above shot is straight on angle and it is a full shot."}
                     </div>
                     {"\n"}
-                    <div className="wsite-spacer tw:[height:50px]"></div>
+                    <div className="tw:[height:50px]"></div>
                     {"\n"}
                   </div>
                   {"\n"}
@@ -79,23 +79,23 @@ export default function Page() {
           {"\n"}
           <div className="wsite-section-wrap">
             {"\n"}
-            <div className="wsite-section wsite-body-section wsite-section-bg-color wsite-background-27 tw:[background-color:#000000] tw:[background-image:none]">
+            <div className="wsite-section wsite-body-section wsite-section-bg-color tw:[background-color:#000000] tw:[background-image:none]">
               {"\n"}
               <div className="wsite-section-content">
                 {"\n"}
                 <div className="container">
                   {"\n"}
-                  <div className="wsite-section-elements">
+                  <div>
                     {"\n"}
-                    <div className="wsite-spacer tw:[height:50px]"></div>
+                    <div className="tw:[height:50px]"></div>
                     {"\n"}
                     <div>
                       <div className="wsite-multicol">
-                        <div className="wsite-multicol-table-wrap tw:[margin:0_-45px]">
+                        <div className="tw:[margin:0_-45px]">
                           {"\n"}
                           <table className="wsite-multicol-table">
-                            <tbody className="wsite-multicol-tbody">
-                              <tr className="wsite-multicol-tr">
+                            <tbody>
+                              <tr>
                                 <td className="wsite-multicol-col tw:[width:60.413223140496%] tw:[padding:0_45px]">
                                   {"\n"}
                                   <div>
@@ -111,7 +111,7 @@ export default function Page() {
                                 </td>
                                 <td className="wsite-multicol-col tw:[width:39.586776859504%] tw:[padding:0_45px]">
                                   {"\n"}
-                                  <div className="wsite-spacer tw:[height:24px]"></div>
+                                  <div className="tw:[height:24px]"></div>
                                   {"\n"}
                                   <h2 className="wsite-content-title tw:[text-align:left]"><font size={"6"}>{"Different tints"}</font></h2>
                                   {"\n"}
@@ -155,24 +155,24 @@ export default function Page() {
           {"\n"}
           <div className="wsite-section-wrap">
             {"\n"}
-            <div className="wsite-section wsite-body-section wsite-background-28">
+            <div className="wsite-section wsite-body-section">
               {"\n"}
               <div className="wsite-section-content">
                 {"\n"}
                 <div className="container">
                   {"\n"}
-                  <div className="wsite-section-elements">
+                  <div>
                     {"\n"}
                     <div>
                       <div className="wsite-multicol">
-                        <div className="wsite-multicol-table-wrap tw:[margin:0_-45px]">
+                        <div className="tw:[margin:0_-45px]">
                           {"\n"}
                           <table className="wsite-multicol-table">
-                            <tbody className="wsite-multicol-tbody">
-                              <tr className="wsite-multicol-tr">
+                            <tbody>
+                              <tr>
                                 <td className="wsite-multicol-col tw:[width:38.181818181818%] tw:[padding:0_45px]">
                                   {"\n"}
-                                  <div className="wsite-spacer tw:[height:24px]"></div>
+                                  <div className="tw:[height:24px]"></div>
                                   {"\n"}
                                   <h2 className="wsite-content-title tw:[text-align:left]"><font size={"6"}>{"Screen Transitioning"}</font></h2>
                                   {"\n"}
@@ -215,12 +215,12 @@ export default function Page() {
                       </div>
                     </div>
                     {"\n"}
-                    <div className="wsite-spacer tw:[height:50px]"></div>
+                    <div className="tw:[height:50px]"></div>
                     {"\n"}
                     <div className="tw:[text-align:center]">
                       <div className="tw:[height:10px] tw:[overflow:hidden]"></div>
                       {"\n"}
-                      <a className="wsite-button wsite-button-small wsite-button-normal" href={"/tech"}>
+                      <a className="wsite-button" href={"/tech"}>
                         {"\n"}
                         <span className="wsite-button-inner">{"Technical perspective"}</span>
                         {"\n"}

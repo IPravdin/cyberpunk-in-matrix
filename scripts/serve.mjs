@@ -27,7 +27,11 @@ createServer(async (request, response) => {
       response.writeHead(403).end('Forbidden');
       return;
     }
-    if ((await stat(filename)).isDirectory()) filename = resolve(filename, 'index.html');
+    // Support the same clean page URLs as Next without redirecting .html aliases.
+    if (!extname(filename) && !pathname.endsWith('/')
+      && await stat(`${filename}.html`).then((file) => file.isFile(), () => false)) {
+      filename = `${filename}.html`;
+    } else if ((await stat(filename)).isDirectory()) filename = resolve(filename, 'index.html');
     const data = await readFile(filename);
     response.writeHead(200, {
       'Content-Type': types[extname(filename)] || 'application/octet-stream',

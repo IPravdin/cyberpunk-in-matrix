@@ -8,25 +8,25 @@ export default function Page() {
       {"\n"}
       <div className="main-wrap">
         {"\n"}
-        <div className="wsite-elements wsite-not-footer" id={"wsite-content"}>
+        <div className="wsite-not-footer" id={"wsite-content"}>
           {"\n"}
           <div className="wsite-section-wrap">
             {"\n"}
-            <div className="wsite-section wsite-body-section wsite-section-bg-image wsite-background-37 tw:[height:481px] tw:[background-image:url(/images/1267201165.gif)] tw:[background-repeat:no-repeat] tw:[background-position:50.00%_100.00%] tw:[background-size:cover] tw:[background-color:transparent]">
+            <div className="wsite-section wsite-body-section tw:[height:481px] tw:[background-image:url(/images/1267201165.gif)] tw:[background-repeat:no-repeat] tw:[background-position:50.00%_100.00%] tw:[background-size:cover] tw:[background-color:transparent]">
               {"\n"}
               <div className="wsite-section-content">
                 {"\n"}
                 <div className="container">
                   {"\n"}
-                  <div className="wsite-section-elements">
+                  <div>
                     {"\n"}
                     <div>
                       <div className="wsite-multicol">
-                        <div className="wsite-multicol-table-wrap tw:[margin:0_-15px]">
+                        <div className="tw:[margin:0_-15px]">
                           {"\n"}
                           <table className="wsite-multicol-table">
-                            <tbody className="wsite-multicol-tbody">
-                              <tr className="wsite-multicol-tr">
+                            <tbody>
+                              <tr>
                                 <td className="wsite-multicol-col tw:[width:36.670071501532%] tw:[padding:0_15px]">
                                   {"\n"}
                                   <h2 className="wsite-content-title tw:[text-align:left]">
@@ -34,7 +34,7 @@ export default function Page() {
                                   </h2>
                                   {"\n"}
                                 </td>
-                                <td className="wsite-multicol-col tw:[width:63.329928498468%] tw:[padding:0_15px]">{"\n"}<div className="wsite-spacer tw:[height:50px]"></div>{"\n"}</td>
+                                <td className="wsite-multicol-col tw:[width:63.329928498468%] tw:[padding:0_15px]">{"\n"}<div className="tw:[height:50px]"></div>{"\n"}</td>
                               </tr>
                             </tbody>
                           </table>
@@ -43,7 +43,7 @@ export default function Page() {
                       </div>
                     </div>
                     {"\n"}
-                    <div className="wsite-spacer tw:[height:100px]"></div>
+                    <div className="tw:[height:100px]"></div>
                     {"\n"}
                   </div>
                   {"\n"}
@@ -57,17 +57,17 @@ export default function Page() {
           {"\n"}
           <div className="wsite-section-wrap">
             {"\n"}
-            <div className="wsite-section wsite-body-section wsite-background-38">
+            <div className="wsite-section wsite-body-section">
               {"\n"}
               <div className="wsite-section-content">
                 {"\n"}
                 <div className="container">
                   {"\n"}
-                  <div className="wsite-section-elements">
+                  <div>
                     {"\n"}
-                    <div className="wsite-spacer tw:[height:50px]"></div>
+                    <div className="tw:[height:50px]"></div>
                     {"\n"}
-                    <div className="wsite-spacer tw:[height:24px]"></div>
+                    <div className="tw:[height:24px]"></div>
                     {"\n"}
                     <div className="paragraph tw:[text-align:left]">
                       <ol>
@@ -99,12 +99,12 @@ export default function Page() {
                       </ol>
                     </div>
                     {"\n"}
-                    <div className="wsite-spacer tw:[height:49px]"></div>
+                    <div className="tw:[height:49px]"></div>
                     {"\n"}
                     <div className="tw:[text-align:center]">
                       <div className="tw:[height:10px] tw:[overflow:hidden]"></div>
                       {"\n"}
-                      <a className="wsite-button wsite-button-small wsite-button-normal" href={"/"}>{"\n"}<span className="wsite-button-inner">{"HOme"}</span>{"\n"}</a>
+                      <a className="wsite-button" href={"/"}>{"\n"}<span className="wsite-button-inner">{"HOme"}</span>{"\n"}</a>
                       {"\n"}
                       <div className="tw:[height:10px] tw:[overflow:hidden]"></div>
                     </div>

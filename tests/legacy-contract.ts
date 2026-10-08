@@ -19,13 +19,20 @@ export function normalizeText(value: string): string {
   return value.replace(/\s+/g, ' ').trim();
 }
 
+export function pageDestination(path: string): string {
+  return migrationTarget === 'legacy' ? path : path.replace(/\.html$/, '');
+}
+
 export function legacyContract(filename: string) {
   const $ = load(readFileSync(join(snapshotDirectory, filename), 'utf8'));
   return {
     title: $('title').text(),
     language: $('html').attr('lang'),
     bodyClasses: ($('body').attr('class') ?? '').split(/\s+/)
-      .filter((name) => name && !['nav-open', 'affix'].includes(name)).sort(),
+      .filter((name) => name && !['nav-open', 'affix'].includes(name))
+      // These original markers have no CSS rules or interaction behavior.
+      .filter((name) => migrationTarget === 'legacy'
+        || (!name.startsWith('wsite-page-') && !['header-page', 'alt-nav-off'].includes(name))).sort(),
     content: normalizeText($('#wsite-content').text()),
     headings: $('#wsite-content h1, #wsite-content h2, #wsite-content h3')
       .toArray().map((element) => normalizeText($(element).text())),
@@ -34,11 +41,14 @@ export function legacyContract(filename: string) {
       content: $(element).attr('content'),
     })).sort((left, right) => `${left.property}:${left.content}`
       .localeCompare(`${right.property}:${right.content}`)),
-    links: $('a[href]').toArray().map((element) => ({
-      href: $(element).attr('href'),
-      text: normalizeText($(element).text()),
-      target: $(element).attr('target') ?? null,
-    })),
+    links: $('a[href]').toArray().map((element) => {
+      const href = $(element).attr('href');
+      return {
+        href: href === undefined ? undefined : pageDestination(href),
+        text: normalizeText($(element).text()),
+        target: $(element).attr('target') ?? null,
+      };
+    }),
     images: $('img').toArray().map((element) => ({
       src: $(element).attr('src'),
       alt: $(element).attr('alt') ?? null,
@@ -187,13 +197,38 @@ export async function renderedContract(page: Page) {
   });
 }
 
+export async function expectDefinedClasses(page: Page) {
+  const undefinedClasses = await page.evaluate(() => {
+    const selectors: string[] = [];
+    function collect(rules: CSSRuleList) {
+      for (const rule of rules) {
+        if (rule instanceof CSSStyleRule) selectors.push(rule.selectorText);
+        if ('cssRules' in rule) collect((rule as CSSGroupingRule).cssRules);
+      }
+    }
+    for (const sheet of document.styleSheets) collect(sheet.cssRules);
+    const classes = new Set([...document.querySelectorAll('[class]')]
+      .flatMap((element) => [...element.classList]));
+    return [...classes].filter((name) => !selectors.some((selector) => {
+      const needle = `.${CSS.escape(name)}`;
+      let start = selector.indexOf(needle);
+      while (start !== -1) {
+        if (!/[\w\\-]/.test(selector[start + needle.length] ?? '')) return true;
+        start = selector.indexOf(needle, start + needle.length);
+      }
+      return false;
+    })).sort();
+  });
+  expect(undefinedClasses, 'Every rendered class must have a loaded CSS selector').toEqual([]);
+}
+
 export async function visualContract(page: Page) {
   return page.evaluate(() => {
     const selectors = [
-      '.birdseye-header', '.nav-wrap', '.main-wrap', '#wsite-content',
+      '.birdseye-header', '.birdseye-header > div', '.main-wrap', '#wsite-content',
       '.wsite-section', '.container', '.wsite-button', '.wsite-content-title',
       '.paragraph', '.wsite-multicol-table', 'img', 'iframe',
-      'font', '.wsite-spacer', 'td.wsite-multicol-col',
+      'font', '#wsite-content div:empty, .banner div:empty', 'td.wsite-multicol-col',
     ];
     const properties = [
       'display', 'position', 'boxSizing', 'color', 'backgroundColor',

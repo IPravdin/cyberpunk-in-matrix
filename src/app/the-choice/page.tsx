@@ -8,31 +8,31 @@ export default function Page() {
       {"\n"}
       <div className="main-wrap">
         {"\n"}
-        <div className="wsite-elements wsite-not-footer" id={"wsite-content"}>
+        <div className="wsite-not-footer" id={"wsite-content"}>
           {"\n"}
           <div className="wsite-section-wrap">
             {"\n"}
-            <div className="wsite-section wsite-body-section wsite-section-bg-image wsite-background-29 tw:[height:481px] tw:[background-image:url(/images/1812500536.jpg)] tw:[background-repeat:no-repeat] tw:[background-position:50%_50%] tw:[background-size:cover] tw:[background-color:transparent]">
+            <div className="wsite-section wsite-body-section tw:[height:481px] tw:[background-image:url(/images/1812500536.jpg)] tw:[background-repeat:no-repeat] tw:[background-position:50%_50%] tw:[background-size:cover] tw:[background-color:transparent]">
               {"\n"}
               <div className="wsite-section-content">
                 {"\n"}
                 <div className="container">
                   {"\n"}
-                  <div className="wsite-section-elements">
+                  <div>
                     {"\n"}
                     <div>
                       <div className="wsite-multicol">
-                        <div className="wsite-multicol-table-wrap tw:[margin:0_-15px]">
+                        <div className="tw:[margin:0_-15px]">
                           {"\n"}
                           <table className="wsite-multicol-table">
-                            <tbody className="wsite-multicol-tbody">
-                              <tr className="wsite-multicol-tr">
+                            <tbody>
+                              <tr>
                                 <td className="wsite-multicol-col tw:[width:36.670071501532%] tw:[padding:0_15px]">
                                   {"\n"}
                                   <h2 className="wsite-content-title tw:[text-align:left]"><font size={"6"}>{"Blue pill vs Red pill"}</font><font size={"6"}>{"​"}</font></h2>
                                   {"\n"}
                                 </td>
-                                <td className="wsite-multicol-col tw:[width:63.329928498468%] tw:[padding:0_15px]">{"\n"}<div className="wsite-spacer tw:[height:50px]"></div>{"\n"}</td>
+                                <td className="wsite-multicol-col tw:[width:63.329928498468%] tw:[padding:0_15px]">{"\n"}<div className="tw:[height:50px]"></div>{"\n"}</td>
                               </tr>
                             </tbody>
                           </table>
@@ -41,7 +41,7 @@ export default function Page() {
                       </div>
                     </div>
                     {"\n"}
-                    <div className="wsite-spacer tw:[height:24px]"></div>
+                    <div className="tw:[height:24px]"></div>
                     {"\n"}
                   </div>
                   {"\n"}
@@ -55,26 +55,26 @@ export default function Page() {
           {"\n"}
           <div className="wsite-section-wrap">
             {"\n"}
-            <div className="wsite-section wsite-body-section wsite-background-30">
+            <div className="wsite-section wsite-body-section">
               {"\n"}
               <div className="wsite-section-content">
                 {"\n"}
                 <div className="container">
                   {"\n"}
-                  <div className="wsite-section-elements">
+                  <div>
                     {"\n"}
-                    <div className="wsite-spacer tw:[height:50px]"></div>
+                    <div className="tw:[height:50px]"></div>
                     {"\n"}
                     <div>
                       <div className="wsite-multicol">
-                        <div className="wsite-multicol-table-wrap tw:[margin:0_-45px]">
+                        <div className="tw:[margin:0_-45px]">
                           {"\n"}
                           <table className="wsite-multicol-table">
-                            <tbody className="wsite-multicol-tbody">
-                              <tr className="wsite-multicol-tr">
+                            <tbody>
+                              <tr>
                                 <td className="wsite-multicol-col tw:[width:45.717035611165%] tw:[padding:0_45px]">
                                   {"\n"}
-                                  <div className="wsite-spacer tw:[height:24px]"></div>
+                                  <div className="tw:[height:24px]"></div>
                                   {"\n"}
                                   <div className="paragraph tw:[text-align:left]">
                                     <ol>
@@ -98,7 +98,7 @@ export default function Page() {
                                   </div>
                                   {"\n"}
                                 </td>
-                                <td className="wsite-multicol-col tw:[width:54.282964388835%] tw:[padding:0_45px]">{"\n"}<div className="wsite-spacer tw:[height:83px]"></div>{"\n"}</td>
+                                <td className="wsite-multicol-col tw:[width:54.282964388835%] tw:[padding:0_45px]">{"\n"}<div className="tw:[height:83px]"></div>{"\n"}</td>
                               </tr>
                             </tbody>
                           </table>
@@ -119,29 +119,29 @@ export default function Page() {
           {"\n"}
           <div className="wsite-section-wrap">
             {"\n"}
-            <div className="wsite-section wsite-body-section wsite-section-bg-image wsite-background-31 tw:[height:516px] tw:[background-image:url(/images/601065284.jpg)] tw:[background-repeat:no-repeat] tw:[background-position:47.92%_22.44%] tw:[background-size:cover] tw:[background-color:transparent]">
+            <div className="wsite-section wsite-body-section tw:[height:516px] tw:[background-image:url(/images/601065284.jpg)] tw:[background-repeat:no-repeat] tw:[background-position:47.92%_22.44%] tw:[background-size:cover] tw:[background-color:transparent]">
               {"\n"}
               <div className="wsite-section-content">
                 {"\n"}
                 <div className="container">
                   {"\n"}
-                  <div className="wsite-section-elements">
+                  <div>
                     {"\n"}
-                    <div className="wsite-spacer tw:[height:178px]"></div>
+                    <div className="tw:[height:178px]"></div>
                     {"\n"}
                     <div>
                       <div className="wsite-multicol">
-                        <div className="wsite-multicol-table-wrap tw:[margin:0_-15px]">
+                        <div className="tw:[margin:0_-15px]">
                           {"\n"}
                           <table className="wsite-multicol-table">
-                            <tbody className="wsite-multicol-tbody">
-                              <tr className="wsite-multicol-tr">
+                            <tbody>
+                              <tr>
                                 <td className="wsite-multicol-col tw:[width:50%] tw:[padding:0_15px]">
                                   {"\n"}
                                   <div className="tw:[text-align:center]">
                                     <div className="tw:[height:10px] tw:[overflow:hidden]"></div>
                                     {"\n"}
-                                    <a className="wsite-button wsite-button-small wsite-button-normal" href={"/mise-en-scene"}>
+                                    <a className="wsite-button" href={"/mise-en-scene"}>
                                       {"\n"}
                                       <span className="wsite-button-inner">{"Take Red Pill"}</span>
                                       {"\n"}
@@ -156,7 +156,7 @@ export default function Page() {
                                   <div className="tw:[text-align:center]">
                                     <div className="tw:[height:10px] tw:[overflow:hidden]"></div>
                                     {"\n"}
-                                    <a className="wsite-button wsite-button-small wsite-button-normal" href={"/blue-pill"}>
+                                    <a className="wsite-button" href={"/blue-pill"}>
                                       {"\n"}
                                       <span className="wsite-button-inner">{"Take Blue Pill"}</span>
                                       {"\n"}

@@ -16,6 +16,8 @@ export default function nextConfig(phase: string): NextConfig {
   if (phase === PHASE_DEVELOPMENT_SERVER) {
     return {
       ...config,
+      // Browser checks can run beside an already-open development server.
+      distDir: process.env.MIGRATION_TEST === '1' ? '.next-test' : '.next',
       output: undefined,
       rewrites() {
         return [

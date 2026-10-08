@@ -8,17 +8,17 @@ export default function Page() {
       {"\n"}
       <div className="main-wrap">
         {"\n"}
-        <div className="wsite-elements wsite-not-footer" id={"wsite-content"}>
+        <div className="wsite-not-footer" id={"wsite-content"}>
           {"\n"}
           <div className="wsite-section-wrap">
             {"\n"}
-            <div className="wsite-section wsite-body-section wsite-background-65">
+            <div className="wsite-section wsite-body-section">
               {"\n"}
               <div className="wsite-section-content">
                 {"\n"}
                 <div className="container">
                   {"\n"}
-                  <div className="wsite-section-elements">
+                  <div>
                     {"\n"}
                     <h2 className="wsite-content-title">{"Bibliography"}</h2>
                     {"\n"}
@@ -94,7 +94,7 @@ export default function Page() {
                       {". March 1999; Warner Bros. Entertainment, 1999. Digital."}
                     </div>
                     {"\n"}
-                    <div className="wsite-spacer tw:[height:50px]"></div>
+                    <div className="tw:[height:50px]"></div>
                     {"\n"}
                     <h2 className="wsite-content-title">{"​Images"}</h2>
                     {"\n"}

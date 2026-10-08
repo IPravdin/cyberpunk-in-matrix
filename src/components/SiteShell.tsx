@@ -68,7 +68,7 @@ export function SiteShell({ home = false, children }: { home?: boolean; children
     <>
       <div className="wrapper">
         <div className="birdseye-header">
-          <div className="nav-wrap">
+          <div>
             <div className="container">
               <div className="logo">
                 <span className="wsite-logo">
@@ -77,7 +77,7 @@ export function SiteShell({ home = false, children }: { home?: boolean; children
                 </span>
               </div>
               <div aria-label="Main navigation" className="nav desktop-nav">
-                <ul className="wsite-menu-default">
+                <ul>
                   <li className="wsite-menu-item-wrap" id={home ? 'active' : 'pg450014579290659988'}>
                     <a className="wsite-menu-item" href="/">Home</a>
                   </li>
@@ -91,7 +91,7 @@ export function SiteShell({ home = false, children }: { home?: boolean; children
       </div>
       <div ref={menuRef} aria-label="Main navigation" className="nav mobile-nav" id="navMobile" inert={!open}>
         <button aria-controls="navMobile" aria-expanded={open} aria-label="Menu" className="hamburger" onClick={toggleMenu} type="button"><span /></button>
-        <ul className="wsite-menu-default">
+        <ul>
           <li className="wsite-menu-item-wrap" id={home ? undefined : 'pg450014579290659988'}>
             <a className="wsite-menu-item" href="/">Home</a>
           </li>

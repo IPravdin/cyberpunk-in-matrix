@@ -19,7 +19,7 @@ pnpm install --frozen-lockfile
 pnpm dev
 ```
 
-Open <http://localhost:4173>. The development server binds to `127.0.0.1`.
+Open <http://localhost:3000>. Use `pnpm dev --hostname 127.0.0.1` to bind locally.
 Stop it with Ctrl+C. Select another port with `PORT=8080 pnpm dev`.
 
 ## Edit the site
@@ -32,14 +32,15 @@ Stop it with Ctrl+C. Select another port with `PORT=8080 pnpm dev`.
   URLs from their extension-free routes. Static export emits the original
   `.html` filenames directly.
 - Page content is server-rendered JSX directly in each `page.tsx`. Its adjacent
-  `layout.tsx` exports static Metadata API values and the original body classes.
+  `layout.tsx` exports static Metadata API values and the body classes used by the stylesheets.
   There is no catch-all route, registry, or route resolver.
 - Each route layout uses `src/components/SiteDocument.tsx` for common document
   markup and compatibility stylesheets. Separate root layouts preserve the
-  page-specific body classes in server-rendered HTML, even without JavaScript.
+  body styling in server-rendered HTML, even without JavaScript. Unused Weebly
+  markers such as `wsite-page-*` and `wsite-background-*` have been removed.
 - Shared layout, mobile navigation, focus handling, and scroll behavior live in
   `src/components/SiteShell.tsx`, the only authored component with `'use client'`.
-  Existing links use ordinary anchors to preserve document navigation and the
+  Page links use extension-free URLs and ordinary anchors to preserve document navigation and the
   reading sequence. Content remains server-rendered inside this shell.
 - `src/app/global-not-found.tsx` uses the experimental `globalNotFound` option
   to retain English document language and a plain 404 response outside the
@@ -92,7 +93,8 @@ passed lint, type-check, legacy integrity,
 31 production browser tests. The export checker validates generated App Router Flight data and
 local resources without executing serialized scripts.
 
-The test configuration starts isolated servers: Next.js on 4175, the legacy
+The test configuration starts isolated servers: Next.js on 4175 with its own
+`.next-test/` build directory, the legacy
 comparison site on 4174, and the production export on 4176 when selected. It
 does not reuse an existing server. To select another target:
 
@@ -107,6 +109,9 @@ It needs Python 3.8 or newer and checks all local references, rejects remote
 scripts/images/styles/fonts and inline handlers, and detects unused assets.
 `pnpm check:export` checks generated output, original page contracts, local
 dependency resolution, embed attributes, and retained asset hashes.
+Browser checks also verify that every rendered class has a selector in the loaded
+stylesheets. Parity checks explicitly account for removed inert body markers and
+the current extension-free link destinations.
 
 Extension-free route folders export the original physical `.html` files
 directly. Generated segment-prefetch payloads stay in their original route
@@ -118,16 +123,21 @@ until their static transport endpoints and hosting rules are revisited.
 
 ```sh
 pnpm build
-pnpm start
+pnpm check:export
+SITE_DIR=out node scripts/serve.mjs
 ```
 
-The build runs Next.js static export and the export integrity check.
-The original `.html` filenames are generated without postprocessing. `pnpm start` previews the completed `out/` directory at
-<http://localhost:4173>; select another port with `PORT=8080 pnpm start`.
+The build runs Next.js static export; run the export integrity check separately.
+The original `.html` filenames are generated without postprocessing. The Node
+preview serves the completed `out/` directory at <http://localhost:4173> and
+resolves clean page URLs to their `.html` files before checking directories.
+`pnpm start` invokes `next start`, which requires a server build rather than
+the configured static export.
 
 Publish **the contents of `out/`** to a static host's document root, or configure
 the host to install with pnpm, build with `pnpm build`, and publish `out`.
-Serve at the root of the domain, preserve `.html` filenames, and let unknown
+Serve at the root of the domain, preserve `.html` filenames, resolve named clean
+URLs to their `.html` files before checking directories, and let unknown
 paths return 404. Do not configure an SPA fallback. Keep the complete source
 repository for maintenance; the deployed site requires only the export files.
 

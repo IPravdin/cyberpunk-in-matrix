@@ -4,7 +4,8 @@ import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { load } from 'cheerio';
 import {
-  expectAppRouter, legacyContract, legacyURL, migrationTarget, renderedContract, routes,
+  expectAppRouter, expectDefinedClasses, legacyContract, legacyURL, migrationTarget,
+  pageDestination, renderedContract, routes,
   stubExternalEmbeds, trackNativeNavigation, visualContract, waitForLocalRendering,
 } from './legacy-contract';
 
@@ -58,6 +59,7 @@ for (const route of routes) {
       await expectAppRouter(page, response);
     }
     await waitForLocalRendering(page);
+    if (migrationTarget !== 'legacy') await expectDefinedClasses(page);
     await expect(page.locator('title')).toHaveCount(1);
     expect(await renderedContract(page)).toEqual(legacyContract(route.filename));
     expect(errors).toEqual([]);
@@ -101,19 +103,19 @@ test('red and blue pill choices preserve their destinations and return paths', a
   const navigation = trackNativeNavigation(page);
   await page.goto('/the-choice.html');
   await page.getByRole('link', { name: 'Take Red Pill', exact: true }).click();
-  await expect(page).toHaveURL(/\/mise-en-scene\.html$/);
-  await expect(page.locator('#wsite-content a[href="/tech.html"]')).toBeVisible();
+  await expect(page).toHaveURL((url) => url.pathname === pageDestination('/mise-en-scene.html'));
+  await expect(page.locator(`#wsite-content a[href="${pageDestination('/tech.html')}"]`)).toBeVisible();
 
   await page.goto('/the-choice.html');
   await page.getByRole('link', { name: 'Take Blue Pill', exact: true }).click();
-  await expect(page).toHaveURL(/\/blue-pill\.html$/);
+  await expect(page).toHaveURL((url) => url.pathname === pageDestination('/blue-pill.html'));
   const returnLink = page.locator('#wsite-content').getByRole('link');
   await expect(returnLink).toHaveAttribute('href', '/');
   await returnLink.click();
   await expect(page).toHaveURL(/\/$/);
   await expect(page.getByRole('link', { name: /START \(Recommended\)/ })).toBeVisible();
   navigation.assertNativeNavigation([
-    '/the-choice.html', '/mise-en-scene.html', '/the-choice.html', '/blue-pill.html', '/',
+    '/the-choice.html', pageDestination('/mise-en-scene.html'), '/the-choice.html', pageDestination('/blue-pill.html'), '/',
   ]);
 });
 
@@ -141,11 +143,11 @@ test('all pages retain their server-rendered content, body classes, and pill nav
     await expect(page.locator('#wsite-content')).toBeAttached();
     expect(await renderedContract(page)).toEqual(legacyContract('the-choice.html'));
     await page.getByRole('link', { name: 'Take Red Pill', exact: true }).click();
-    await expect(page).toHaveURL(/\/mise-en-scene\.html$/);
-    await expect(page.locator('#wsite-content a[href="/tech.html"]')).toBeVisible();
+    await expect(page).toHaveURL((url) => url.pathname === pageDestination('/mise-en-scene.html'));
+    await expect(page.locator(`#wsite-content a[href="${pageDestination('/tech.html')}"]`)).toBeVisible();
     await page.goto('/the-choice.html');
     await page.getByRole('link', { name: 'Take Blue Pill', exact: true }).click();
-    await expect(page).toHaveURL(/\/blue-pill\.html$/);
+    await expect(page).toHaveURL((url) => url.pathname === pageDestination('/blue-pill.html'));
     await page.locator('#wsite-content').getByRole('link').click();
     await expect(page).toHaveURL(/\/$/);
     await expect(page.getByRole('link', { name: /START \(Recommended\)/ })).toBeVisible();

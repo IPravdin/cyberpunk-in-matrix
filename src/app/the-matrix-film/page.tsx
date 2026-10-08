@@ -8,13 +8,13 @@ export default function Page() {
       {"\n"}
       <div className="main-wrap">
         {"\n"}
-        <div className="wsite-elements wsite-not-footer" id={"wsite-content"}>
+        <div className="wsite-not-footer" id={"wsite-content"}>
           {"\n"}
           <div className="wsite-section-wrap">
             {"\n"}
-            <div className="wsite-section wsite-body-section wsite-section-bg-image wsite-background-45 tw:[height:560px] tw:[background-image:url(/images/1153739335.jpeg)] tw:[background-repeat:no-repeat] tw:[background-position:undefined_undefined] tw:[background-size:cover] tw:[background-color:transparent]">
+            <div className="wsite-section wsite-body-section tw:[height:560px] tw:[background-image:url(/images/1153739335.jpeg)] tw:[background-repeat:no-repeat] tw:[background-position:undefined_undefined] tw:[background-size:cover] tw:[background-color:transparent]">
               {"\n"}
-              <div className="wsite-section-content">{"\n"}<div className="container">{"\n"}<div className="wsite-section-elements">{"\n"}</div>{"\n"}</div>{"\n"}</div>
+              <div className="wsite-section-content">{"\n"}<div className="container">{"\n"}<div>{"\n"}</div>{"\n"}</div>{"\n"}</div>
               {"\n"}
             </div>
             {"\n"}
@@ -22,13 +22,13 @@ export default function Page() {
           {"\n"}
           <div className="wsite-section-wrap">
             {"\n"}
-            <div className="wsite-section wsite-body-section wsite-background-47">
+            <div className="wsite-section wsite-body-section">
               {"\n"}
               <div className="wsite-section-content">
                 {"\n"}
                 <div className="container">
                   {"\n"}
-                  <div className="wsite-section-elements">
+                  <div>
                     {"\n"}
                     <h2 className="wsite-content-title tw:[text-align:left]"><font size={"6"}>{"The Matrix (1999)"}</font></h2>
                     {"\n"}
@@ -59,7 +59,7 @@ export default function Page() {
                     <div className="tw:[text-align:center]">
                       <div className="tw:[height:10px] tw:[overflow:hidden]"></div>
                       {"\n"}
-                      <a className="wsite-button wsite-button-small wsite-button-normal" href={"/intro-to-cyberpunk-and-post-cyberpunk"}>
+                      <a className="wsite-button" href={"/intro-to-cyberpunk-and-post-cyberpunk"}>
                         {"\n"}
                         <span className="wsite-button-inner">{"Cyberpunk and post-cyberpunk"}</span>
                         {"\n"}

@@ -20,7 +20,7 @@ const webServer = [
 if (target !== 'legacy') {
   webServer.push({
     command: target === 'next'
-      ? 'PORT=4175 pnpm dev'
+      ? 'MIGRATION_TEST=1 PORT=4175 pnpm dev --hostname 127.0.0.1'
       : 'PORT=4176 SITE_DIR=out node scripts/serve.mjs',
     url: targetURL,
     reuseExistingServer: false,
